@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card{
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 0px auto;
+  background: red;
+  background-image: url('images/RaptorsLogo.png');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-back-1{
+  background: white;
+  background-image: url('images/PascalSiakam.avif');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
+}
+
+.card-back-2{
+  background: white;
+  background-image: url('images/ScottieBarnes.avif');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
+}
+
+.card-back-3{
+  background: white;
+  background-image: url('images/FredVanVleet.png');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
+}
+
+.card-back-4{
+  background: white;
+  background-image: url('images/OGAnunoby.png');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
+}
+
+.card-back-5{
+  background: white;
+  background-image: url('images/KyleLowry.png');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
+}
+
+.card-back-6{
+  background: white;
+  background-image: url('images/DemarDerozan.png');
+  background-size: cover; /* Adjust according to your design needs */
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+  padding: 90px;
 }
