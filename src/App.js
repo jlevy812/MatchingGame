@@ -3,18 +3,19 @@ import { Row, Col } from 'react-bootstrap';
 import React, { useState } from 'react';
 import './App.css';
 
+const stylesArray = ['card-back-1', 'card-back-1', 'card-back-2', 'card-back-2', 'card-back-3', 'card-back-3', 'card-back-4', 'card-back-4', 'card-back-5', 'card-back-5', 'card-back-6', 'card-back-6'];
+
+for (let i = stylesArray.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [stylesArray[i], stylesArray[j]] = [stylesArray[j], stylesArray[i]];
+}
+
+const stylesArray1 = [stylesArray[0], stylesArray[1], stylesArray[2]];
+const stylesArray2 = [stylesArray[3], stylesArray[4], stylesArray[5]];
+const stylesArray3 = [stylesArray[6], stylesArray[7], stylesArray[8]];
+const stylesArray4 = [stylesArray[9], stylesArray[10], stylesArray[11]];
+
 const App = () => {
-  const stylesArray = ['card-back-1', 'card-back-1', 'card-back-2', 'card-back-2', 'card-back-3', 'card-back-3', 'card-back-4', 'card-back-4', 'card-back-5', 'card-back-5', 'card-back-6', 'card-back-6'];
-
-    for (let i = stylesArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [stylesArray[i], stylesArray[j]] = [stylesArray[j], stylesArray[i]];
-    }
-
-  const stylesArray1 = [stylesArray[0], stylesArray[1], stylesArray[2]];
-  const stylesArray2 = [stylesArray[3], stylesArray[4], stylesArray[5]];
-  const stylesArray3 = [stylesArray[6], stylesArray[7], stylesArray[8]];
-  const stylesArray4 = [stylesArray[9], stylesArray[10], stylesArray[11]];
 
   const [cardStates, setCardStates] = useState(Array(12).fill(false));
 
@@ -37,6 +38,7 @@ const App = () => {
           </Col>
         ))}
       </Row>
+      <br></br>
       <Row>
         {stylesArray2.map((style, index) => (
           <Col key={`card${index + 3}`}>
@@ -44,6 +46,7 @@ const App = () => {
           </Col>
         ))}
       </Row>
+      <br></br>
       <Row>
         {stylesArray3.map((style, index) => (
           <Col key={`card${index + 6}`}>
@@ -51,6 +54,7 @@ const App = () => {
           </Col>
         ))}
       </Row>
+      <br></br>
       <Row>
         {stylesArray4.map((style, index) => (
           <Col key={`card${index + 9}`}>
