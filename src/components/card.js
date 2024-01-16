@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import ReactCardFlip from 'react-card-flip'
 
-const Card = ({ style, isFlipped }) => {
+const Card = ({ style, isFlipped, id, onCardClick, isFrozen }) => {
   const [internalIsFlipped, setInternalIsFlipped] = useState(false);
 
   useEffect(() => {
@@ -9,7 +9,10 @@ const Card = ({ style, isFlipped }) => {
   }, [isFlipped]);
 
   const flipCard = () => {
-    setInternalIsFlipped(!internalIsFlipped);
+    if (!isFrozen){
+      setInternalIsFlipped(!internalIsFlipped);
+      onCardClick(style, id); 
+    }
   };
 
   return (
