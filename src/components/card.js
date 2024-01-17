@@ -1,22 +1,22 @@
-import { useState, useEffect } from 'react'
 import ReactCardFlip from 'react-card-flip'
 
-const Card = ({ style, isFlipped, id, onCardClick, isFrozen }) => {
-  const [internalIsFlipped, setInternalIsFlipped] = useState(false);
-
-  useEffect(() => {
-    setInternalIsFlipped(isFlipped);
-  }, [isFlipped]);
+const Card = ({ style, id, onCardClick, isFrozen, internalIsFlipped, setInternalIsFlipped }) => {
 
   const flipCard = () => {
     if (!isFrozen){
-      setInternalIsFlipped(!internalIsFlipped);
-      onCardClick(style, id); 
+      if (internalIsFlipped.includes(id)){
+        const index = internalIsFlipped.indexOf(id);
+        internalIsFlipped.splice(index, 1);
+        onCardClick(style, id); 
+      } else {
+        setInternalIsFlipped([...internalIsFlipped, id]);
+        onCardClick(style, id); 
+      } 
     }
   };
 
   return (
-    <ReactCardFlip isFlipped={internalIsFlipped} flipDirection="vertical">
+    <ReactCardFlip isFlipped={internalIsFlipped.includes(id)} flipDirection="vertical">
       <div className={`card`} onClick={flipCard}>
       </div>
       <div className={`card ${style}`} onClick={flipCard}>
