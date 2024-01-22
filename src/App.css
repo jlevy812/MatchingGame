@@ -74,6 +74,17 @@
 	color: white;
 	font-size: 16pt;
 	font-family: 'Proxima Nova';
+	border-color: white;
+	border-style: solid;
+}
+
+.restartBackground{
+	background: black;
+	width: 245pt;
+	height: 55pt;
+	border-radius: 0.75rem !important; 
+	margin: auto;
+	padding-top: 2.5pt;
 }
 
 .scoreText{
@@ -97,4 +108,24 @@
 	background-color: #4C0B0E;
 	background-image: url('assets/GamePage/Pattern_Mobile_SetTo100PercentWidth.svg');
 	text-align: center;
+}
+
+.matchLogo{
+	width: 260pt;
+	height: 55pt;
+	background-image: url('assets/SignUpPage/MATCH.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+	padding: 40pt;
+}
+
+.turnsText{
+	font-size: 16pt;
+	padding: 5pt;
+}
+
+.paddedColumn{
+	padding-top: 5pt;
+	padding-bottom: 5pt;
 }

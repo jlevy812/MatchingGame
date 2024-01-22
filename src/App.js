@@ -96,44 +96,43 @@ const App = () => {
   return (
     <div className="container">
       <div className="red-back">
+        <div className="matchLogo"></div>
         <div className="board">
+          <div className="turnsText">turns: 3/8</div>
           <Row>
             {stylesArrayGrid[0].map((style, index) => (
-              <Col key={`card${index}`}>
+              <Col className="paddedColumn" key={`card${index}`}>
                 <Card style={stylesArrayGrid[0][index]} id={`card${index}`} onCardClick={handleCardClick} isFrozen={isFrozen[index]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <br></br>
           <Row>
             {stylesArrayGrid[1].map((style, index) => (
-              <Col key={`card${index + 3}`}>
+              <Col className="paddedColumn" key={`card${index + 3}`}>
                 <Card style={stylesArrayGrid[1][index]} id={`card${index + 3}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 3]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <br></br>
           <Row>
             {stylesArrayGrid[2].map((style, index) => (
-              <Col key={`card${index + 6}`}>
+              <Col className="paddedColumn" key={`card${index + 6}`}>
                 <Card style={stylesArrayGrid[2][index]} id={`card${index + 6}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 6]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <br></br>
           <Row>
             {stylesArrayGrid[3].map((style, index) => (
-              <Col key={`card${index + 9}`}>
+              <Col className="paddedColumn" key={`card${index + 9}`}>
                 <Card style={stylesArrayGrid[3][index]} id={`card${index + 9}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 9]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <br></br>
         </div>
         <br></br>
-      <button className="restartButton" onClick={handleClick}>RESTART</button>
+        <div className="restartBackground">
+          <button className="restartButton" onClick={handleClick}>RESTART</button>
+        </div>
       </div>
-      
     </div>
   );
 }

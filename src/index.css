@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: center;
   color: white; 
+  padding: 5pt !important;
 }
 
 .card-back-1{
