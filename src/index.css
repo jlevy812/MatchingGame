@@ -1,67 +1,61 @@
 .card{
-  width: 90px;
-  height: 90px;
-  border: 1px solid black;
-  border-radius: 20px;
+  width: 110pt !important;
+  height: 110pt !important;
+  border: 15px solid white !important;
+  border-radius: 1.5rem !important; 
   margin: 0px auto;
-  background: red;
-  background-image: url('images/RaptorsLogo.png');
-  background-size: cover; /* Adjust according to your design needs */
+  background-color: #bc1b21 !important;
+  background-image: url('assets/GamePage/Logo_60x60.svg');
+  background-size: 65%;
+  background-repeat: no-repeat;
   background-position: center;
-  color: white; /* Adjust text color for better visibility */
-  padding: 90px;
+  color: white; 
 }
 
 .card-back-1{
   background: white;
-  background-image: url('images/PascalSiakam.avif');
+  background-image: url('assets/OldGame/PascalSiakam.avif');
   background-size: cover; /* Adjust according to your design needs */
   background-position: center;
   color: white; /* Adjust text color for better visibility */
-  padding: 90px;
 }
 
 .card-back-2{
   background: white;
-  background-image: url('images/ScottieBarnes.avif');
+  background-image: url('assets/OldGame/ScottieBarnes.avif');
   background-size: cover; /* Adjust according to your design needs */
   background-position: center;
   color: white; /* Adjust text color for better visibility */
-  padding: 90px;
 }
 
 .card-back-3{
   background: white;
-  background-image: url('images/FredVanVleet.png');
+  background-image: url('assets/OldGame/FredVanVleet.png');
   background-size: cover; /* Adjust according to your design needs */
   background-position: center;
   color: white; /* Adjust text color for better visibility */
-  padding: 90px;
 }
 
 .card-back-4{
   background: white;
-  background-image: url('images/OGAnunoby.png');
+  background-image: url('assets/OldGame/OGAnunoby.png');
   background-size: cover; /* Adjust according to your design needs */
   background-position: center;
   color: white; /* Adjust text color for better visibility */
-  padding: 90px;
 }
 
 .card-back-5{
   background: white;
-  background-image: url('images/KyleLowry.png');
+  background-image: url('assets/OldGame/KyleLowry.png');
   background-size: cover; /* Adjust according to your design needs */
   background-position: center;
   color: white; /* Adjust text color for better visibility */
-  padding: 90px;
 }
 
 .card-back-6{
   background: white;
-  background-image: url('images/DemarDerozan.png');
+  background-image: url('assets/OldGame/DemarDerozan.png');
   background-size: cover; /* Adjust according to your design needs */
   background-position: center;
   color: white; /* Adjust text color for better visibility */
-  padding: 90px;
 }

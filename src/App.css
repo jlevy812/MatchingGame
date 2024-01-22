@@ -4,7 +4,6 @@
 	text-align: center;
 	margin: auto;
 	width: 50rem;
-	/* justify-content: center; */
 }
 
 .geeks {
@@ -15,9 +14,11 @@
 	display: flex;
     flex-direction: column;
 	justify-content: center;
-	height: 1000px;
-
+	background-color: black;
+	width: 390pt !important;
+	height: 844pt !important;
 	margin: auto;
+	padding-left: 0% !important;
 }
 
 .flip-card {
@@ -63,8 +64,37 @@
 	text-align: center;
 }
 
-.startButton{
-	background-color: red;
-	width: 30%;
+.restartButton{
+	background: linear-gradient(#BC1B21, #5E0E11);
+	width: 240pt;
+	height: 50pt;
+	display: table-cell;
+	border-radius: 0.75rem !important; 
 	margin: auto;
+	color: white;
+	font-size: 16pt;
+	font-family: 'Proxima Nova, Regular';
+}
+
+.scoreText{
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+}
+
+.board{
+	height: 530pt;
+	width: 370pt;
+	background-color: #F0F0F0;
+	border-radius: 1rem !important; 
+	padding: 2pt;
+	margin: auto;
+}
+
+.red-back{
+	width: 390pt;
+	height: 700pt;
+	background-color: #4C0B0E;
+	background-image: url('assets/GamePage/Pattern_Mobile_SetTo100PercentWidth.svg');
+	text-align: center;
 }
