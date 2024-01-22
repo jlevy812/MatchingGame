@@ -128,4 +128,6 @@
 .paddedColumn{
 	padding-top: 5pt;
 	padding-bottom: 5pt;
+	padding-left: 8pt !important;
+	padding-right: 8pt !important;
 }
