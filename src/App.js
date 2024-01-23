@@ -8,6 +8,7 @@ var card1Style;
 var card1Clicked = false;
 var everythingFrozen = false;
 var stylesArrayGrid = [];
+var numTurns = 0;
 
 const stylesArray = ['card-back-1', 'card-back-1', 'card-back-2', 'card-back-2', 'card-back-3', 'card-back-3', 'card-back-4', 'card-back-4', 'card-back-5', 'card-back-5', 'card-back-6', 'card-back-6'];
 stylesArrayGrid = [[stylesArray[0], stylesArray[1], stylesArray[2]], [stylesArray[3], stylesArray[4], stylesArray[5]], [stylesArray[6], stylesArray[7], stylesArray[8]], [stylesArray[9], stylesArray[10], stylesArray[11]]]; 
@@ -60,6 +61,7 @@ const App = () => {
         isFrozen[parseInt(card1Id.replace('card', ''), 10)] = true;
   
       } else {
+        numTurns++;
         if (card1Id !== clickedId && card1Style === clickedStyle){
           //FREEZE BOTH CARDS
           isFrozen[parseInt(card1Id.replace('card', ''), 10)] = true;
@@ -98,7 +100,10 @@ const App = () => {
       <div className="red-back">
         <div className="matchLogo"></div>
         <div className="board">
-          <div className="turnsText">turns: 3/8</div>
+          <div className="turnsText">
+            <span className="turns-label">TURNS: </span>
+            <span className="turns-value">{numTurns}/8</span>
+          </div>
           <Row>
             {stylesArrayGrid[0].map((style, index) => (
               <Col className="paddedColumn" key={`card${index}`}>

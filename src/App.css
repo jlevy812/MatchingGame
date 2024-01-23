@@ -122,7 +122,18 @@
 
 .turnsText{
 	font-size: 16pt;
-	padding: 5pt;
+	padding-top: 5pt;
+	font-family: 'Proxima Nova';
+}
+
+.turns-label{
+	color: black;
+    font-weight: bold;
+}
+
+.turns-value {
+	color: #BC1B21;
+	font-weight: bold;
 }
 
 .paddedColumn{
