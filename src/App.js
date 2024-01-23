@@ -144,10 +144,12 @@ const App = () => {
             ))}
           </Row>
         </div>
-        <br></br>
-        <div className="restartBackground">
-          <button className="restartButton" onClick={handleClick}>RESTART</button>
+        <div className="restartContainer">
+          <div className="restartBackground">
+            <button className="restartButton" onClick={handleClick}>RESTART</button>
+          </div>
         </div>
+
         <div className="bottomDesignRectangles">
           <div className="bottomLeftRectangle"></div>
           <div className="bottomRightRectangle"></div>
