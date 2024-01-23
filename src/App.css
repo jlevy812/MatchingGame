@@ -1,15 +1,3 @@
-/* Filename - App.css */
-
-.App {
-	text-align: center;
-	margin: auto;
-	width: 50rem;
-}
-
-.geeks {
-	color: green;
-}
-
 .container {
 	display: flex;
     flex-direction: column;
@@ -19,6 +7,13 @@
 	height: 844pt !important;
 	margin: auto;
 	padding-left: 0% !important;
+}
+
+.paddedColumn{
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+	padding-left: 8pt !important;
+	padding-right: 8pt !important;
 }
 
 .flip-card {
@@ -64,6 +59,111 @@
 	text-align: center;
 }
 
+.card{
+	width: 110pt !important;
+	height: 110pt !important;
+	border: 15px solid white !important;
+	border-radius: 1.5rem !important; 
+	margin: 0px auto;
+	background-color: #bc1b21 !important;
+	background-image: url('assets/GamePage/Logo_60x60.svg');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white; 
+}
+  
+.card-back-1{
+	background: white;
+	background-image: url('assets/OldGame/PascalSiakam.avif');
+	background-size: cover; /* Adjust according to your design needs */
+	background-position: center;
+	color: white; /* Adjust text color for better visibility */
+}
+  
+.card-back-2{
+	background: white;
+	background-image: url('assets/OldGame/ScottieBarnes.avif');
+	background-size: cover; /* Adjust according to your design needs */
+	background-position: center;
+	color: white; /* Adjust text color for better visibility */
+}
+  
+.card-back-3{
+	background: white;
+	background-image: url('assets/OldGame/FredVanVleet.png');
+	background-size: cover; /* Adjust according to your design needs */
+	background-position: center;
+	color: white; /* Adjust text color for better visibility */
+}
+  
+.card-back-4{
+	background: white;
+	background-image: url('assets/OldGame/OGAnunoby.png');
+	background-size: cover; /* Adjust according to your design needs */
+	background-position: center;
+	color: white; /* Adjust text color for better visibility */
+}
+  
+.card-back-5{
+	background: white;
+	background-image: url('assets/OldGame/KyleLowry.png');
+	background-size: cover; /* Adjust according to your design needs */
+	background-position: center;
+	color: white; /* Adjust text color for better visibility */
+}
+  
+.card-back-6{
+	background: white;
+	background-image: url('assets/OldGame/DemarDerozan.png');
+	background-size: cover; /* Adjust according to your design needs */
+	background-position: center;
+	color: white; /* Adjust text color for better visibility */
+}
+
+.red-back{
+	width: 390pt;
+	height: 700pt;
+	background-color: #4C0B0E;
+	background-image: url('assets/GamePage/Pattern_Mobile_SetTo100PercentWidth.svg');
+	text-align: center;
+}
+
+.matchLogo{
+	width: 260pt;
+	height: 55pt;
+	background-image: url('assets/SignUpPage/MATCH.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+	padding: 40pt;
+}
+
+.board{
+	height: 530pt;
+	width: 370pt;
+	background-color: #F0F0F0;
+	border-radius: 1rem !important; 
+	padding: 2pt;
+	margin: auto;
+}
+
+.turnsText{
+	font-size: 16pt;
+	padding-top: 5pt;
+	font-family: 'Proxima Nova';
+}
+
+.turns-label{
+	color: black;
+    font-weight: bold;
+}
+
+.turns-value {
+	color: #BC1B21;
+	font-weight: bold;
+}
+
 .restartButton{
 	background: linear-gradient(#BC1B21, #5E0E11);
 	width: 240pt;
@@ -86,59 +186,4 @@
 	margin: auto;
 	padding-top: 2.5pt;
 }
-
-.scoreText{
-	font-size: 20px;
-	text-align: center;
-	margin: auto;
-}
-
-.board{
-	height: 530pt;
-	width: 370pt;
-	background-color: #F0F0F0;
-	border-radius: 1rem !important; 
-	padding: 2pt;
-	margin: auto;
-}
-
-.red-back{
-	width: 390pt;
-	height: 700pt;
-	background-color: #4C0B0E;
-	background-image: url('assets/GamePage/Pattern_Mobile_SetTo100PercentWidth.svg');
-	text-align: center;
-}
-
-.matchLogo{
-	width: 260pt;
-	height: 55pt;
-	background-image: url('assets/SignUpPage/MATCH.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: auto;
-	padding: 40pt;
-}
-
-.turnsText{
-	font-size: 16pt;
-	padding-top: 5pt;
-	font-family: 'Proxima Nova';
-}
-
-.turns-label{
-	color: black;
-    font-weight: bold;
-}
-
-.turns-value {
-	color: #BC1B21;
-	font-weight: bold;
-}
-
-.paddedColumn{
-	padding-top: 5pt;
-	padding-bottom: 5pt;
-	padding-left: 8pt !important;
-	padding-right: 8pt !important;
-}
+  
