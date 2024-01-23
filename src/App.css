@@ -63,7 +63,7 @@
 	width: 110pt !important;
 	height: 110pt !important;
 	border: 15px solid white !important;
-	border-radius: 1.5rem !important; 
+	border-radius: 20pt !important; 
 	margin: 0px auto;
 	background-color: #bc1b21 !important;
 	background-image: url('assets/GamePage/Logo_60x60.svg');
@@ -71,6 +71,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	color: white; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
   
 .card-back-1{
@@ -121,12 +122,75 @@
 	color: white; /* Adjust text color for better visibility */
 }
 
+.backgroundContainer{
+	align-items: center;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 390pt;
+	height: 30pt;
+}
+
+.teamNameBackground{
+	width: 268pt;
+	height: 30pt;
+	border: 1pt solid #BC1B21;
+	align-items: center;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 6pt;
+	border-top-right-radius: 6pt;
+	border-bottom: 0pt;
+}
+
+.teamName{
+	color: #BC1B21;
+	font-size: 14pt;
+	letter-spacing: 7pt;
+	text-align: center;
+	padding-top: 4.67pt;
+}
+
 .red-back{
 	width: 390pt;
 	height: 700pt;
 	background-color: #4C0B0E;
 	background-image: url('assets/GamePage/Pattern_Mobile_SetTo100PercentWidth.svg');
 	text-align: center;
+	position: relative;
+	border-top: 1pt solid #BC1B21;
+	border-bottom: 1pt solid #BC1B21;
+}
+
+.topDesignRectangles{
+	height: 10pt;
+    width: 390pt;
+	display: flex;
+    justify-content: space-between;
+}
+
+.topLeftRectangle{
+	height: 10pt;
+	width: 61.5pt;
+	border: 1pt solid #BC1B21;
+	border-left: 0pt;
+	border-top: 0pt;
+	border-bottom-right-radius: 6pt;
+}
+
+.topRightRectangle{
+	height: 10pt;
+	width: 62pt;
+	border: 1pt solid #BC1B21;
+	border-right: 0pt;
+	border-top: 0pt;
+	border-bottom-left-radius: 6pt;
+}
+
+.matchContainer{
+	padding-top: 4pt;
+	padding-bottom: 14pt;
 }
 
 .matchLogo{
@@ -136,14 +200,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: auto;
-	padding: 40pt;
 }
 
 .board{
 	height: 530pt;
 	width: 370pt;
 	background-color: #F0F0F0;
-	border-radius: 1rem !important; 
+	border-radius: 10pt !important; 
 	padding: 2pt;
 	margin: auto;
 }
@@ -169,21 +232,96 @@
 	width: 240pt;
 	height: 50pt;
 	display: table-cell;
-	border-radius: 0.75rem !important; 
+	border-radius: 6pt !important; 
 	margin: auto;
 	color: white;
 	font-size: 16pt;
 	font-family: 'Proxima Nova';
 	border-color: white;
 	border-style: solid;
+	letter-spacing: 5.6pt;
 }
 
 .restartBackground{
 	background: black;
 	width: 245pt;
 	height: 55pt;
-	border-radius: 0.75rem !important; 
+	border-radius: 9pt !important; 
 	margin: auto;
 	padding-top: 2.5pt;
+}
+
+.bottomDesignRectangles{
+	height: 10pt;
+    width: 390pt;
+	display: flex;
+    justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+}
+
+.bottomLeftRectangle{
+	height: 10pt;
+	width: 106pt;
+	border: 1pt solid #BC1B21;
+	border-left: 0pt;
+	border-bottom: 0pt;
+	border-top-right-radius: 6pt;
+}
+
+.bottomRightRectangle{
+	height: 10pt;
+	width: 105.5pt;
+	border: 1pt solid #BC1B21;
+	border-right: 0pt;
+	border-bottom: 0pt;
+	border-top-left-radius: 6pt;
+}
+
+.sponsorColumn{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.sponsorContainer{
+	align-items: center;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 390pt;
+	height: 50pt;
+}
+
+.sponsorBackground{
+	width: 180pt;
+	height: 50pt;
+	border: 1pt solid #BC1B21;
+	align-items: center;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-left-radius: 6pt;
+	border-bottom-right-radius: 6pt;
+	border-top: 0pt;
+}
+
+.sponsorName{
+	color: white;
+	font-size: 10pt;
+	letter-spacing: 2pt;
+	text-align: left;
+	padding-left: 25pt;
+	padding-top: 18pt;
+}
+
+.sponsorPicture{
+	height: 23pt;
+	width: 52pt;
+	background-image: url('assets/GamePage/tdLogo.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: auto;
+	margin-top: 12.5pt;
 }
   

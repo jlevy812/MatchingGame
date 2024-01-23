@@ -97,8 +97,19 @@ const App = () => {
 
   return (
     <div className="container">
+      <div className="backgroundContainer">
+        <div className="teamNameBackground">
+          <div className="teamName">TORONTO RAPTORS</div>
+        </div>
+      </div>
       <div className="red-back">
-        <div className="matchLogo"></div>
+        <div className="topDesignRectangles">
+          <div className="topLeftRectangle"></div>
+          <div className="topRightRectangle"></div>
+        </div>
+        <div className="matchContainer">
+          <div className="matchLogo"></div>
+        </div>
         <div className="board">
           <div className="turnsText">
             <span className="turns-label">TURNS: </span>
@@ -137,7 +148,25 @@ const App = () => {
         <div className="restartBackground">
           <button className="restartButton" onClick={handleClick}>RESTART</button>
         </div>
+        <div className="bottomDesignRectangles">
+          <div className="bottomLeftRectangle"></div>
+          <div className="bottomRightRectangle"></div>
+        </div>
       </div>
+      <div className="sponsorContainer">
+        <div className="sponsorBackground">
+          <Row>
+            <Col className="sponsorColumn" xs={8} md={8}>
+              <div className="sponsorName">PRESENTED BY</div>
+            </Col>
+            <Col className="sponsorColumn" xs={4} md={4}>
+              <div className="sponsorPicture"></div>
+            </Col>
+          </Row>
+        </div>
+      </div>
+      
+      
     </div>
   );
 }
