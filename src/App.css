@@ -12,8 +12,14 @@
 .paddedColumn{
 	padding-top: 5pt;
 	padding-bottom: 5pt;
-	padding-left: 8pt !important;
-	padding-right: 8pt !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.rowMargin{
+	margin: 0 5px;
+	width: 370pt;
+	padding-left: 15pt;
 }
 
 .flip-card {
@@ -162,6 +168,25 @@
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
 }
+
+.gradientTop{
+	position: absolute;
+    bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60pt;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.gradientBottom{
+	position: absolute;
+    top: 0;
+	left: 0;
+	right: 0;
+	height: 60pt;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
 
 .topDesignRectangles{
 	height: 10pt;

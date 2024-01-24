@@ -103,6 +103,9 @@ const App = () => {
         </div>
       </div>
       <div className="red-back">
+        <div className="gradientTop"></div>
+        <div className="gradientBottom"></div>
+        <div></div>
         <div className="topDesignRectangles">
           <div className="topLeftRectangle"></div>
           <div className="topRightRectangle"></div>
@@ -115,30 +118,30 @@ const App = () => {
             <span className="turns-label">TURNS: </span>
             <span className="turns-value">{numTurns}/8</span>
           </div>
-          <Row>
+          <Row className="rowMargin">
             {stylesArrayGrid[0].map((style, index) => (
-              <Col className="paddedColumn" key={`card${index}`}>
+              <Col className="paddedColumn" key={`card${index}`} xs={4} md={4}>
                 <Card style={stylesArrayGrid[0][index]} id={`card${index}`} onCardClick={handleCardClick} isFrozen={isFrozen[index]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <Row>
+          <Row className="rowMargin">
             {stylesArrayGrid[1].map((style, index) => (
-              <Col className="paddedColumn" key={`card${index + 3}`}>
+              <Col className="paddedColumn" key={`card${index + 3}`} xs={4} md={4}>
                 <Card style={stylesArrayGrid[1][index]} id={`card${index + 3}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 3]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <Row>
+          <Row className="rowMargin">
             {stylesArrayGrid[2].map((style, index) => (
-              <Col className="paddedColumn" key={`card${index + 6}`}>
+              <Col className="paddedColumn" key={`card${index + 6}`} xs={4} md={4}>
                 <Card style={stylesArrayGrid[2][index]} id={`card${index + 6}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 6]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
           </Row>
-          <Row>
+          <Row className="rowMargin">
             {stylesArrayGrid[3].map((style, index) => (
-              <Col className="paddedColumn" key={`card${index + 9}`}>
+              <Col className="paddedColumn" key={`card${index + 9}`} xs={4} md={4}>
                 <Card style={stylesArrayGrid[3][index]} id={`card${index + 9}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 9]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
               </Col>
             ))}
@@ -149,7 +152,6 @@ const App = () => {
             <button className="restartButton" onClick={handleClick}>RESTART</button>
           </div>
         </div>
-
         <div className="bottomDesignRectangles">
           <div className="bottomLeftRectangle"></div>
           <div className="bottomRightRectangle"></div>
