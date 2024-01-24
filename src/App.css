@@ -10,9 +10,10 @@
 }
 
 .paddedColumn{
+	width: 110pt;
 	padding-top: 5pt;
 	padding-bottom: 5pt;
-	padding-left: 0 !important;
+	padding-left: 4pt !important;
 	padding-right: 0 !important;
 }
 

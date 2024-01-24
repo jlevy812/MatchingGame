@@ -16,7 +16,7 @@ const Card = ({ style, id, onCardClick, isFrozen, internalIsFlipped, setInternal
   };
 
   return (
-    <ReactCardFlip isFlipped={internalIsFlipped.includes(id)} flipDirection="vertical">
+    <ReactCardFlip isFlipped={internalIsFlipped.includes(id)} flipDirection="vertical" containerStyle={{ width: '110pt', height: '110pt' }}>
       <div className={`card`} onClick={flipCard}>
       </div>
       <div className={`card ${style}`} onClick={flipCard}>
