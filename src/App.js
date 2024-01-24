@@ -9,6 +9,10 @@ var card1Clicked = false;
 var everythingFrozen = false;
 var stylesArrayGrid = [];
 var numTurns = 0;
+var numMatches = 0;
+var buttonClicked = false;
+var started = false;
+var flipDelay = 0;
 
 const stylesArray = ['card-back-1', 'card-back-1', 'card-back-2', 'card-back-2', 'card-back-3', 'card-back-3', 'card-back-4', 'card-back-4', 'card-back-5', 'card-back-5', 'card-back-6', 'card-back-6'];
 stylesArrayGrid = [[stylesArray[0], stylesArray[1], stylesArray[2]], [stylesArray[3], stylesArray[4], stylesArray[5]], [stylesArray[6], stylesArray[7], stylesArray[8]], [stylesArray[9], stylesArray[10], stylesArray[11]]]; 
@@ -21,34 +25,47 @@ const App = () => {
   const handleClick = () => {
 
     //NEED TO FLIP BACK CARDS BEFORE NEW RANDOM
-
-    for (let i = stylesArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [stylesArray[i], stylesArray[j]] = [stylesArray[j], stylesArray[i]];
-    }
-    
-    stylesArrayGrid = [[stylesArray[0], stylesArray[1], stylesArray[2]], [stylesArray[3], stylesArray[4], stylesArray[5]], [stylesArray[6], stylesArray[7], stylesArray[8]], [stylesArray[9], stylesArray[10], stylesArray[11]]]; 
-    
-    for (let i = 0; i < 12; i++){
-      isFrozen[i] = false;
-    }
-
-    setInternalIsFlipped(["card0", "card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "card11"]);
-
-    everythingFrozen = true;
-    for (let i = 0; i < 12; i++){
-      isFrozen[i] = true;
-    }
-
-    setTimeout(() => {
-      for (let i = 0; i < 12; i++){
-        isFrozen[i] = false;
+    if (!buttonClicked){
+      if (numMatches > 0){
+        setInternalIsFlipped([]);
+        flipDelay = 1000;
+      } else {
+        flipDelay = 0;
       }
-      setInternalIsFlipped([]);
-
-    }, 3000);
-    everythingFrozen = false;
-
+      setTimeout(() => {
+        started = true;
+        buttonClicked = true;
+        numTurns = 0;
+        numMatches = 0;
+        for (let i = stylesArray.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [stylesArray[i], stylesArray[j]] = [stylesArray[j], stylesArray[i]];
+        }
+        
+        stylesArrayGrid = [[stylesArray[0], stylesArray[1], stylesArray[2]], [stylesArray[3], stylesArray[4], stylesArray[5]], [stylesArray[6], stylesArray[7], stylesArray[8]], [stylesArray[9], stylesArray[10], stylesArray[11]]]; 
+        
+        for (let i = 0; i < 12; i++){
+          isFrozen[i] = false;
+        }
+    
+        setInternalIsFlipped(["card0", "card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "card11"]);
+    
+        everythingFrozen = true;
+        for (let i = 0; i < 12; i++){
+          isFrozen[i] = true;
+        }
+    
+        setTimeout(() => {
+          for (let i = 0; i < 12; i++){
+            isFrozen[i] = false;
+          }
+          setInternalIsFlipped([]);
+          buttonClicked = false;
+          everythingFrozen = false;
+        }, 3000);
+      }, flipDelay);
+    }
+  
   };
 
   const handleCardClick = (clickedStyle, clickedId) => {
@@ -66,7 +83,7 @@ const App = () => {
           //FREEZE BOTH CARDS
           isFrozen[parseInt(card1Id.replace('card', ''), 10)] = true;
           isFrozen[parseInt(clickedId.replace('card', ''), 10)] = true;
-  
+          numMatches++;
         } else {
           //FLIP BACK BOTH CARDS
           everythingFrozen = true;
@@ -104,7 +121,6 @@ const App = () => {
       </div>
       <div className="red-back">
         <div className="gradientTop"></div>
-        <div className="gradientBottom"></div>
         <div></div>
         <div className="topDesignRectangles">
           <div className="topLeftRectangle"></div>
@@ -156,6 +172,7 @@ const App = () => {
           <div className="bottomLeftRectangle"></div>
           <div className="bottomRightRectangle"></div>
         </div>
+        <div className="gradientBottom"></div>
       </div>
       <div className="sponsorContainer">
         <div className="sponsorBackground">

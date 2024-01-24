@@ -19,7 +19,7 @@
 .rowMargin{
 	margin: 0 5px;
 	width: 370pt;
-	padding-left: 15pt;
+	padding-left: 14pt;
 }
 
 .flip-card {
@@ -169,16 +169,17 @@
 	border-bottom: 1pt solid #BC1B21;
 }
 
-.gradientTop{
+.gradientBottom{
 	position: absolute;
     bottom: 0;
 	left: 0;
 	right: 0;
 	height: 60pt;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+	z-index: 1;
 }
 
-.gradientBottom{
+.gradientTop{
 	position: absolute;
     top: 0;
 	left: 0;
@@ -193,6 +194,8 @@
     width: 390pt;
 	display: flex;
     justify-content: space-between;
+	position: inherit;
+	z-index: 3;
 }
 
 .topLeftRectangle{
@@ -278,6 +281,11 @@
 
 .restartContainer{
 	padding-top: 10pt;
+	position: relative;
+	z-index: 2;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottomDesignRectangles{
@@ -287,6 +295,7 @@
     justify-content: space-between;
 	position: absolute;
 	bottom: 0;
+	z-index: 4;
 }
 
 .bottomLeftRectangle{
