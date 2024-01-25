@@ -10,10 +10,10 @@
 }
 
 .paddedColumn{
-	width: 110pt;
+	width: 120pt;
 	padding-top: 5pt;
 	padding-bottom: 5pt;
-	padding-left: 4pt !important;
+	padding-left: 4.5pt !important;
 	padding-right: 0 !important;
 }
 
@@ -187,6 +187,7 @@
 	right: 0;
 	height: 60pt;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+	z-index: 5;
 }
 
 
@@ -220,6 +221,8 @@
 .matchContainer{
 	padding-top: 4pt;
 	padding-bottom: 14pt;
+	position: inherit;
+	z-index: 6;
 }
 
 .matchLogo{
