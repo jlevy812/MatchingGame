@@ -12,7 +12,6 @@ var stylesArrayGrid = [];
 var numTurns = 0;
 var numMatches = 0;
 var buttonClicked = false;
-var started = false;
 var flipDelay = 0;
 var startOrRestart = "START";
 var newPage = true;
@@ -41,7 +40,6 @@ function GameplayPage() {
           flipDelay = 0;
         }
         setTimeout(() => {
-          started = true;
           buttonClicked = true;
           numTurns = 0;
           numMatches = 0;
@@ -91,7 +89,7 @@ function GameplayPage() {
             isFrozen[parseInt(card1Id.replace('card', ''), 10)] = true;
             isFrozen[parseInt(clickedId.replace('card', ''), 10)] = true;
             numMatches++;
-            if (numMatches == 6){
+            if (numMatches === 6){
                 setTimeout(() => {
                   numTurns = 0;
                   numMatches = 0;
