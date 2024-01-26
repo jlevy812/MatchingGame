@@ -584,7 +584,68 @@
 	left: 20pt;
 }
 
+.rightRedLine{
+	height: 1pt;
+	width: 153pt;
+	position: absolute;
+	top: 548.5pt;
+	background-color: #BC1B21;
+}
 
+.leftRedLine{
+	height: 1pt;
+	width: 153pt;
+	position: absolute;
+	top: 548.5pt;
+	left: 237pt;
+	background-color: #BC1B21;
+}
+
+.shareText{
+	height: 17pt;
+	width: 59pt;
+	position: absolute;
+	top: 540pt;
+	left: 166pt;
+	color: white;
+	font-size: 14pt;
+	font-family: 'Helvetica Neue';
+	font-weight: Bold;
+	letter-spacing: 2.8pt;
+}
+
+.facebookLogo{
+	height: 30pt;
+	width: 30pt;
+	position: absolute;
+	top: 570pt;
+	left: 101pt;
+	background-image: url('assets/FinishPage/icon_facebook.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.xLogo{
+	height: 30pt;
+	width: 30pt;
+	position: absolute;
+	top: 570pt;
+	left: 181pt;
+	background-image: url('assets/FinishPage/icon_x.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.instagramLogo{
+	height: 30pt;
+	width: 30pt;
+	position: absolute;
+	top: 570pt;
+	left: 261pt;
+	background-image: url('assets/FinishPage/icon_instagram.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
 
 .checkEmailText{
 	width: 240pt;
