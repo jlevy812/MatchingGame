@@ -584,6 +584,23 @@
 	left: 20pt;
 }
 
+
+
+.checkEmailText{
+	width: 240pt;
+	height: 35pt;
+	position: absolute;
+	top: 620pt;
+	left: 75pt;
+	text-align: center;
+	white-space: pre-line;
+	font-size: 16pt;
+	font-family: 'Proxima Nova';
+	font-weight: lighter;
+	line-height: 19pt;
+	color: white;
+}
+
 .finishRedBack{
 	width: 390pt;
 	height: 100pt;
@@ -603,3 +620,4 @@
 .finishPlayAgainContainer{
 	z-index: 11;
 }
+

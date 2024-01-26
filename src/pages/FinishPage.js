@@ -14,6 +14,7 @@ function FinishPage() {
       <div className='congratsText'>CONGRATS</div>
       <div className='youWonText'>YOU&nbsp;WON!</div>
       <div className='winnerPhoto'></div>
+      <div className='checkEmailText'>CHECK YOUR EMAIL FOR YOUR PRIZE DETAILS</div>
       <div className='finishRedBack'>
         <div className='gradientTop'></div>
         <div className="finishPlayAgainContainer">
