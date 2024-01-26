@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SignupPage />} />
-        <Route path="/gameplay" element={<GameplayPage />} />
-        <Route path="/finish" element={<FinishPage />} />
+        <Route path="/MatchingGame" element={<SignupPage />} />
+        <Route path="/MatchingGame/gameplay" element={<GameplayPage />} />
+        <Route path="/MatchingGame/finish" element={<FinishPage />} />
       </Routes>
     </Router>
   );
