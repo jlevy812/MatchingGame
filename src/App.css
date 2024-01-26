@@ -1,4 +1,169 @@
-.container {
+/* Signup Page */
+.signupContainer {
+    flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	width: 390pt !important;
+	height: 844pt !important;
+	margin: auto;
+	padding-left: 0% !important;
+	background-image: url('assets/SignUpPage/Background.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	position: relative;
+}
+
+.signupTeamNameContainer{
+	position: absolute;
+	top: 210pt;
+}
+
+.signupTeamNameBackground{
+	background-color: black;
+}
+
+.signupRedBack{
+	width: 390pt;
+	height: 140pt;
+	background-image: url('assets/SignUpPage/Pattern_ShareableImage_SetTo100PercentWidth.png');
+	background-size: 85%;
+	background-color: rgba(76, 11, 14, 0.65); 
+	text-align: center;
+	position: absolute;
+	border-top: 1pt solid #BC1B21;
+	border-bottom: 1pt solid #BC1B21;
+	top: 240pt;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupMatchContainer{
+	width: 390pt;
+	height: 140pt;
+	position: inherit;
+	z-index: 6;
+	display: flex;
+}
+
+.signupMatchLogo{
+	width: 340pt;
+	height: 70pt;
+	background-image: url('assets/SignUpPage/MATCH.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	margin: auto;
+	opacity: 100%;
+	position: relative;
+	z-index: 10;	
+}
+
+.signupTopDesignRectangles{
+	position: absolute !important;
+	top: 0;
+}
+
+.signupSponsorContainer{
+	position: absolute !important;
+	top: 380pt;
+}
+
+.signupSponsorBackground{
+	background-color: black;
+}
+
+.signupTextBoxes{
+	position: absolute;
+	top: 460pt;
+	left: 30pt;
+	height: 210pt;
+	width: 330pt;
+	display: flex;
+  	flex-direction: column;
+}
+
+.inputBox {
+	margin-bottom: 20pt;
+}
+  
+.inputField {
+	width: 330pt;
+	height: 50pt;
+	color: white;
+	background-color: #BC1B2133;
+	border: 1px solid #BC1B21;
+	border-radius: 5pt;
+	padding: 20pt;
+	font-size: 18pt;
+	font-family: 'Helvetica Neue';
+}
+
+.inputField::placeholder {
+	color: #BC1B21;
+	font-size: 14pt;
+	font-family: 'Helvetica Neue';
+}
+
+.checkbox-container {
+	position: absolute;
+	left: 56pt;
+	top: 670pt;
+	align-items: center;
+}
+  
+.checkboxLabel {
+	color: white;
+	font-size: 11pt; 
+	display: flex;
+	align-items: center;
+}
+  
+.checkbox {
+	margin-right: 10pt;
+	appearance: none;
+	width: 20pt;
+	height: 20pt; 
+	border: 3pt solid #FFFFFFCC;
+	background-color: transparent;
+	border-radius: 5pt; 
+	outline: none;
+	cursor: pointer;
+}
+
+.checkbox::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF34; 
+	border-radius: 2pt; 
+}
+  
+.checkbox:checked::before {
+	content: "\2713"; 
+	color: white; 
+	font-size: 11pt; 
+	text-align: center;
+	opacity: 1; 
+}
+
+.whiteText {
+	color: white;
+}
+  
+.termsAndConditionsText {
+	color: #C8102E;
+}
+
+.signupStartContainer{
+	position: absolute;
+	top: 715pt;
+	left: 75pt;
+}
+
+/* Gameplay Page */
+.gameplayContainer {
 	display: flex;
     flex-direction: column;
 	justify-content: center;
@@ -129,7 +294,7 @@
 	color: white; /* Adjust text color for better visibility */
 }
 
-.backgroundContainer{
+.teamNameContainer{
 	align-items: center;
 	margin-top: auto;
 	margin-left: auto;
@@ -197,7 +362,7 @@
 	display: flex;
     justify-content: space-between;
 	position: inherit;
-	z-index: 3;
+	z-index: 7;
 }
 
 .topLeftRectangle{
@@ -211,7 +376,7 @@
 
 .topRightRectangle{
 	height: 10pt;
-	width: 62pt;
+	width: 61.5pt;
 	border: 1pt solid #BC1B21;
 	border-right: 0pt;
 	border-top: 0pt;

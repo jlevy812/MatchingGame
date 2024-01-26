@@ -14,6 +14,8 @@ var numMatches = 0;
 var buttonClicked = false;
 var started = false;
 var flipDelay = 0;
+var startOrRestart = "START";
+var newPage = true;
 
 const stylesArray = ['card-back-1', 'card-back-1', 'card-back-2', 'card-back-2', 'card-back-3', 'card-back-3', 'card-back-4', 'card-back-4', 'card-back-5', 'card-back-5', 'card-back-6', 'card-back-6'];
 stylesArrayGrid = [[stylesArray[0], stylesArray[1], stylesArray[2]], [stylesArray[3], stylesArray[4], stylesArray[5]], [stylesArray[6], stylesArray[7], stylesArray[8]], [stylesArray[9], stylesArray[10], stylesArray[11]]]; 
@@ -25,8 +27,12 @@ function GameplayPage() {
     const [internalIsFlipped, setInternalIsFlipped] = useState([]);
 
     const handleClick = () => {
+
+      if (newPage){
+        startOrRestart = "RESTART";
+        newPage = false;
+      }
   
-      //NEED TO FLIP BACK CARDS BEFORE NEW RANDOM
       if (!buttonClicked){
         if (numMatches > 0){
           setInternalIsFlipped([]);
@@ -121,8 +127,8 @@ function GameplayPage() {
     };
   
     return (
-      <div className="container">
-        <div className="backgroundContainer">
+      <div className="gameplayContainer">
+        <div className="teamNameContainer">
           <div className="teamNameBackground">
             <div className="teamName">TORONTO RAPTORS</div>
           </div>
@@ -173,7 +179,7 @@ function GameplayPage() {
           </div>
           <div className="restartContainer">
             <div className="restartBackground">
-              <button className="restartButton" onClick={handleClick}>RESTART</button>
+              <button className="restartButton" onClick={handleClick}>{startOrRestart}</button>
             </div>
           </div>
           <div className="bottomDesignRectangles">
@@ -199,31 +205,3 @@ function GameplayPage() {
 }
 
 export default GameplayPage;
-
-// // GameplayPage.js
-// import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-
-// function GameplayPage() {
-//   const [tilesMatched, setTilesMatched] = useState(false);
-//   const navigate = useNavigate();
-
-//   // Your matching game logic here
-
-//   // Simulate finishing the game
-//   const finishGame = () => {
-//     setTilesMatched(true);
-//     // Redirect to FinishPage
-//     navigate('/finish');
-//   };
-
-//   return (
-//     <div>
-//       <h1>Gameplay Page</h1>
-//       {/* Your game components go here */}
-//       {tilesMatched ? <p>Congratulations! All tiles matched!</p> : null}
-//     </div>
-//   );
-// }
-
-// export default GameplayPage;
