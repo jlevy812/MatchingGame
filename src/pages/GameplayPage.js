@@ -88,7 +88,6 @@ function GameplayPage() {
         } else {
           numTurns++;
           if (card1Id !== clickedId && card1Style === clickedStyle){
-            //FREEZE BOTH CARDS
             isFrozen[parseInt(card1Id.replace('card', ''), 10)] = true;
             isFrozen[parseInt(clickedId.replace('card', ''), 10)] = true;
             numMatches++;
@@ -104,7 +103,6 @@ function GameplayPage() {
             }
 
           } else {
-            //FLIP BACK BOTH CARDS
             everythingFrozen = true;
             const oldFreeze = [...isFrozen];
             for (let i = 0; i < 12; i++){

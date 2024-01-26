@@ -248,50 +248,50 @@
   
 .card-back-1{
 	background: white;
-	background-image: url('assets/OldGame/PascalSiakam.avif');
-	background-size: cover; /* Adjust according to your design needs */
+	background-image: url('assets/GamePage/scottiebarnes.jpeg');
+	background-size: cover;
 	background-position: center;
-	color: white; /* Adjust text color for better visibility */
+	color: white;
 }
   
 .card-back-2{
 	background: white;
-	background-image: url('assets/OldGame/ScottieBarnes.avif');
-	background-size: cover; /* Adjust according to your design needs */
+	background-image: url('assets/GamePage/immanuelquickly.jpeg');
+	background-size: cover;
 	background-position: center;
-	color: white; /* Adjust text color for better visibility */
+	color: white;
 }
   
 .card-back-3{
 	background: white;
-	background-image: url('assets/OldGame/FredVanVleet.png');
-	background-size: cover; /* Adjust according to your design needs */
+	background-image: url('assets/GamePage/rjbarrett.webp');
+	background-size: cover;
 	background-position: center;
-	color: white; /* Adjust text color for better visibility */
+	color: white;
 }
   
 .card-back-4{
 	background: white;
-	background-image: url('assets/OldGame/OGAnunoby.png');
-	background-size: cover; /* Adjust according to your design needs */
+	background-image: url('assets/GamePage/jakobpoeltl.jpeg');
+	background-size: cover;
 	background-position: center;
-	color: white; /* Adjust text color for better visibility */
+	color: white;
 }
   
 .card-back-5{
 	background: white;
-	background-image: url('assets/OldGame/KyleLowry.png');
-	background-size: cover; /* Adjust according to your design needs */
+	background-image: url('assets/GamePage/chrisboucher.jpeg');
+	background-size: cover;
 	background-position: center;
-	color: white; /* Adjust text color for better visibility */
+	color: white;
 }
   
 .card-back-6{
 	background: white;
-	background-image: url('assets/OldGame/DemarDerozan.png');
-	background-size: cover; /* Adjust according to your design needs */
+	background-image: url('assets/GamePage/garytrentjr.jpeg');
+	background-size: cover;
 	background-position: center;
-	color: white; /* Adjust text color for better visibility */
+	color: white;
 }
 
 .teamNameContainer{
