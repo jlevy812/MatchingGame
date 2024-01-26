@@ -96,7 +96,7 @@ function GameplayPage() {
                   flipDelay = 0;
                   startOrRestart = "START";
                   newPage = true;
-                    navigate('/finish');
+                    navigate('/MatchingGame/finish');
                 }, 1000);
             }
 

@@ -5,7 +5,7 @@ function FinishPage() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/gameplay');
+    navigate('/MatchingGame/gameplay');
   };
 
   return (
