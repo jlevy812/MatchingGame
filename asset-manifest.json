@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/MatchingGame/static/css/main.fb7d91d9.css",
+    "main.js": "/MatchingGame/static/js/main.96393af0.js",
+    "static/media/Background.png": "/MatchingGame/static/media/Background.f4c599fcbd6c65c22660.png",
+    "static/media/immanuelquickly.jpeg": "/MatchingGame/static/media/immanuelquickly.e82b25a70f69cf0c241c.jpeg",
+    "static/media/winnerPhoto.png": "/MatchingGame/static/media/winnerPhoto.2605a625677aca1fe95c.png",
+    "static/media/garytrentjr.jpeg": "/MatchingGame/static/media/garytrentjr.434b0c572301ed55b150.jpeg",
+    "static/media/BlurredBackground.png": "/MatchingGame/static/media/BlurredBackground.f8ab2df4708a499a53cf.png",
+    "static/media/Pattern_Mobile_SetTo100PercentWidth.svg": "/MatchingGame/static/media/Pattern_Mobile_SetTo100PercentWidth.f2435b5442f17b297e61.svg",
+    "static/media/rjbarrett.webp": "/MatchingGame/static/media/rjbarrett.1bea0148537842ac43af.webp",
+    "static/media/jakobpoeltl.jpeg": "/MatchingGame/static/media/jakobpoeltl.d89c0817d7e0efa7052a.jpeg",
+    "static/media/chrisboucher.jpeg": "/MatchingGame/static/media/chrisboucher.caa2c099582245733fc3.jpeg",
+    "static/media/scottiebarnes.jpeg": "/MatchingGame/static/media/scottiebarnes.7e01d7d7825f1a3690ec.jpeg",
+    "static/media/Pattern_ShareableImage_SetTo100PercentWidth.png": "/MatchingGame/static/media/Pattern_ShareableImage_SetTo100PercentWidth.8a9ef87ccfd00164fd45.png",
+    "static/media/Logo_60x60.svg": "/MatchingGame/static/media/Logo_60x60.b6b97001bbb2be595085.svg",
+    "static/media/MATCH.svg": "/MatchingGame/static/media/MATCH.266895cd7329ab51e38d.svg",
+    "static/media/icon_instagram.svg": "/MatchingGame/static/media/icon_instagram.2b09a6d7718253693f4b.svg",
+    "index.html": "/MatchingGame/index.html",
+    "static/media/icon_x.svg": "/MatchingGame/static/media/icon_x.b9cd5f0dcb29adfbb6f0.svg",
+    "static/media/icon_facebook.svg": "/MatchingGame/static/media/icon_facebook.71d976bd57bc62c85279.svg",
+    "main.fb7d91d9.css.map": "/MatchingGame/static/css/main.fb7d91d9.css.map",
+    "main.96393af0.js.map": "/MatchingGame/static/js/main.96393af0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb7d91d9.css",
+    "static/js/main.96393af0.js"
+  ]
+}
