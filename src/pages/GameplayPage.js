@@ -94,6 +94,11 @@ function GameplayPage() {
             numMatches++;
             if (numMatches == 6){
                 setTimeout(() => {
+                  numTurns = 0;
+                  numMatches = 0;
+                  flipDelay = 0;
+                  startOrRestart = "START";
+                  newPage = true;
                     navigate('/finish');
                 }, 1000);
             }

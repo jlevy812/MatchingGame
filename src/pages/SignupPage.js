@@ -19,19 +19,19 @@ function SignupPage() {
         </div>
       </div>
       <div className='signupRedBack'>
-      <div className='gradientTop'></div>
-          <div className="topDesignRectangles signupTopDesignRectangles">
-            <div className="topLeftRectangle"></div>
-            <div className="topRightRectangle"></div>
-          </div>
-          <div className='signupMatchContainer'>
-            <div className='signupMatchLogo'></div>
-          </div>
-          <div className="bottomDesignRectangles">
-            <div className="bottomLeftRectangle"></div>
-            <div className="bottomRightRectangle"></div>
-          </div>
-          <div className='gradientBottom'></div>
+        <div className='gradientTop'></div>
+        <div className="topDesignRectangles signupTopDesignRectangles">
+          <div className="topLeftRectangle"></div>
+          <div className="topRightRectangle"></div>
+        </div>
+        <div className='signupMatchContainer'>
+          <div className='signupMatchLogo'></div>
+        </div>
+        <div className="bottomDesignRectangles">
+          <div className="bottomLeftRectangle"></div>
+          <div className="bottomRightRectangle"></div>
+        </div>
+        <div className='gradientBottom'></div>
       </div>
       <div className="sponsorContainer signupSponsorContainer">
         <div className="sponsorBackground signupSponsorBackground">
@@ -64,10 +64,10 @@ function SignupPage() {
         </label>
       </div>
       <div className="signupStartContainer">
-            <div className="restartBackground">
-              <button className="restartButton" onClick={handleClick}>START</button>
-            </div>
-          </div>
+        <div className="restartBackground">
+          <button className="restartButton" onClick={handleClick}>START</button>
+        </div>
+      </div>
     </div>
   );
 }
