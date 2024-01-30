@@ -13,12 +13,16 @@
 	background-repeat: no-repeat;
 	background-position: top;
 	position: relative;
-	/* max-width: 100vw; */
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 .signupTeamNameContainer{
 	position: absolute;
-	top: 210pt;
+	max-width: 68.718%;
+	max-height: 3.555%;
+	top: 24.882%;
+	left: 15.641%;
 }
 
 .signupTeamNameBackground{
@@ -35,9 +39,11 @@
 	position: absolute;
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
-	top: 240pt;
+	top: 28.436vh;
     align-items: center;
     justify-content: center;
+	max-width: 100%;
+	max-height: 16.588%;
 }
 
 .signupMatchContainer{
@@ -46,6 +52,8 @@
 	position: inherit;
 	z-index: 6;
 	display: flex;
+	max-width: 100%;
+	max-height: 100%
 }
 
 .signupMatchLogo{
@@ -54,7 +62,7 @@
 	background-image: url('assets/SignUpPage/MATCH.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+	background-size: 85%;
 	margin: auto;
 	opacity: 100%;
 	position: relative;
@@ -68,7 +76,7 @@
 
 .signupSponsorContainer{
 	position: absolute !important;
-	top: 380pt;
+	top: 45vh;
 }
 
 .signupSponsorBackground{
@@ -297,33 +305,34 @@
 }
 
 .teamNameContainer{
-	align-items: center;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	width: 390pt;
+	position: absolute;
+	width: 268pt;
 	height: 30pt;
+	max-width: 68.718vw;
+	max-height: 3.555vh;
 }
 
 .teamNameBackground{
 	width: 268pt;
 	height: 30pt;
 	border: 1pt solid #BC1B21;
-	align-items: center;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
 	border-top-left-radius: 6pt;
 	border-top-right-radius: 6pt;
 	border-bottom: 0pt;
+	max-width: 68.718vw;
+	max-height: 3.555vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .teamName{
+	height: 30pt;
 	color: #BC1B21;
 	font-size: 14pt;
 	letter-spacing: 7pt;
-	text-align: center;
-	padding-top: 4.67pt;
+	max-height: 100%;
+	padding-top: 0.55%;
 }
 
 .red-back{
@@ -365,6 +374,7 @@
     justify-content: space-between;
 	position: inherit;
 	z-index: 7;
+	max-width: 100vw;
 }
 
 .topLeftRectangle{
@@ -374,6 +384,7 @@
 	border-left: 0pt;
 	border-top: 0pt;
 	border-bottom-right-radius: 6pt;
+	max-width: 15.769vw;
 }
 
 .topRightRectangle{
@@ -383,6 +394,7 @@
 	border-right: 0pt;
 	border-top: 0pt;
 	border-bottom-left-radius: 6pt;
+	max-width: 15.769vw;
 }
 
 .matchContainer{
@@ -467,6 +479,7 @@
 	position: absolute;
 	bottom: 0;
 	z-index: 4;
+	max-width: 100vw;
 }
 
 .bottomLeftRectangle{
@@ -476,6 +489,7 @@
 	border-left: 0pt;
 	border-bottom: 0pt;
 	border-top-right-radius: 6pt;
+	max-width: 27.179vw;
 }
 
 .bottomRightRectangle{
@@ -485,6 +499,7 @@
 	border-right: 0pt;
 	border-bottom: 0pt;
 	border-top-left-radius: 6pt;
+	max-width: 27.051vw;
 }
 
 .sponsorColumn{
