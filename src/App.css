@@ -499,7 +499,7 @@
 	border-right: 0pt;
 	border-bottom: 0pt;
 	border-top-left-radius: 6pt;
-	max-width: 27.051vw;
+	max-width: 27.3vw;
 }
 
 .sponsorColumn{
@@ -514,6 +514,7 @@
 	margin-right: auto;
 	width: 390pt;
 	height: 50pt;
+	max-width: 100vw;
 }
 
 .sponsorBackground{
@@ -527,6 +528,7 @@
 	border-bottom-left-radius: 6pt;
 	border-bottom-right-radius: 6pt;
 	border-top: 0pt;
+	max-width: 46.154vw;
 }
 
 .sponsorName{
