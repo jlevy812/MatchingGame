@@ -85,16 +85,17 @@
 
 .signupTextBoxes{
 	position: absolute;
-	top: 460pt;
-	left: 30pt;
-	height: 210pt;
-	width: 330pt;
+	top: 54.502%;
+	left: 7.692%;
+	height: 24.882%;
+	width: 84.615%;
 	display: flex;
   	flex-direction: column;
 }
 
 .inputBox {
-	margin-bottom: 20pt;
+	margin-bottom: 2.37vh;
+	max-height: 31.753%;
 }
   
 .inputField {
@@ -107,6 +108,8 @@
 	padding: 20pt;
 	font-size: 18pt;
 	font-family: 'Helvetica Neue';
+	max-width: 100%;
+	max-height: 5.924vh;
 }
 
 .inputField::placeholder {
@@ -118,7 +121,7 @@
 .checkbox-container {
 	position: absolute;
 	left: 56pt;
-	top: 670pt;
+	top: 79.384%;
 	align-items: center;
 }
   
@@ -168,8 +171,8 @@
 
 .signupStartContainer{
 	position: absolute;
-	top: 715pt;
-	left: 75pt;
+	top: 84.715%;
+	left: 19.231%;
 }
 
 /* Gameplay Page */
