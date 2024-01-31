@@ -76,7 +76,7 @@
 
 .signupSponsorContainer{
 	position: absolute !important;
-	top: 45.1vh;
+	top: 45vh;
 }
 
 .signupSponsorBackground{
@@ -518,6 +518,8 @@
 	width: 180pt;
 	height: 50pt;
 	left: 26.923%;
+	max-width: 46.154%;
+	max-height: 5.924%;
 }
 
 .sponsorBackground{
