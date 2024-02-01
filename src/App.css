@@ -119,17 +119,46 @@
 }
 
 .checkbox-container {
+	height: 20pt; 
+	width: 330pt; 
 	position: absolute;
-	left: 56pt;
-	top: 79.384%;
+	left: 14.36%;
+	top: 80%;
 	align-items: center;
 }
   
 .checkboxLabel {
 	color: white;
-	font-size: 11pt; 
+	font-size: 0.9169rem; 
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 520px) {
+	.checkbox-container {
+		left: 15.36%
+	}
+	.checkboxLabel {
+	  font-size: 0.8669rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.checkbox-container {
+		left: 14.36%
+	}
+	.checkboxLabel {
+	  font-size: 0.7669rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.checkbox-container {
+		left: 13.36%
+	}
+	.checkboxLabel {
+	  font-size: 0.6669rem;
+	}
 }
   
 .checkbox {
@@ -539,6 +568,11 @@
 	padding-right: 0 !important;
 }
 
+.sponsorRow{
+	height: 50pt;
+	max-height: 100%;
+}
+
 .sponsorContainer{
 	align-items: center;
 	margin-bottom: auto;
@@ -569,11 +603,11 @@
 
 .sponsorName{
 	color: white;
-	font-size: 10pt;
+	font-size: 0.836rem;
 	letter-spacing: 2pt;
 	text-align: left;
 	padding-left: 25pt;
-	padding-top: 18pt;
+	padding-top: 2.132vh;
 }
 
 .sponsorPicture{
@@ -584,8 +618,21 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-right: auto;
-	margin-top: 12.5pt;
+	margin-top: 1.481vh;
+	max-height: 60%;
+	max-width: 86.667%;
 }
+
+@media (max-width: 520px) {
+	.sponsorName {
+	  font-size: 0.6rem;
+	  padding-left: 20pt;
+	}
+	.sponsorPicture{
+		max-height: 50%;
+	}
+}
+
 
 /* Finish Page */
  

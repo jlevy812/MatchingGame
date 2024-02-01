@@ -35,7 +35,7 @@ function SignupPage() {
       </div>
       <div className="sponsorContainer signupSponsorContainer">
         <div className="sponsorBackground signupSponsorBackground">
-          <Row>
+          <Row className='sponsorRow'>
             <Col className="sponsorColumn" xs={8} md={8}>
               <div className="sponsorName">PRESENTED BY</div>
             </Col>
