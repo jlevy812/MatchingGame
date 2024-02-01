@@ -123,7 +123,7 @@
 	width: 330pt; 
 	position: absolute;
 	left: 14.36%;
-	top: 80%;
+	top: 79.5%;
 	align-items: center;
 }
   
@@ -136,7 +136,7 @@
 
 @media (max-width: 520px) {
 	.checkbox-container {
-		left: 15.36%
+		left: 15.36%;
 	}
 	.checkboxLabel {
 	  font-size: 0.8669rem;
@@ -145,7 +145,7 @@
 
 @media (max-width: 450px) {
 	.checkbox-container {
-		left: 14.36%
+		left: 14.36%;
 	}
 	.checkboxLabel {
 	  font-size: 0.7669rem;
@@ -154,10 +154,16 @@
 
 @media (max-width: 400px) {
 	.checkbox-container {
-		left: 13.36%
+		left: 13.36%;
 	}
 	.checkboxLabel {
 	  font-size: 0.6669rem;
+	}
+}
+
+@media (max-height: 860px) {
+	.checkbox-container {
+		top: 82%;
 	}
 }
   
@@ -204,6 +210,12 @@
 	left: 19.231%;
 	max-width: 62.821%;
 	max-height: 6.517%;
+}
+
+@media (max-height: 860px) {
+	.signupStartContainer{
+		top: 86.715%;
+	}
 }
 
 /* Gameplay Page */
