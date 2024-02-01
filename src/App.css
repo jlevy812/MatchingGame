@@ -346,9 +346,22 @@
 
 @media (max-width: 520px) {
 	.teamName {
+	  font-size: 1rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.teamName {
 	  font-size: 0.7rem;
 	}
 }
+
+@media (max-width: 380px) {
+	.teamName {
+	  font-size: 0.5rem;
+	}
+}
+
 
 .red-back{
 	width: 390pt;
