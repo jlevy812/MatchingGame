@@ -1,5 +1,4 @@
 /* Signup Page */
-
 .signupContainer {
     flex-direction: column;
 	justify-content: center;
@@ -44,6 +43,7 @@
     justify-content: center;
 	max-width: 100%;
 	max-height: 16.588%;
+	z-index: 16;
 }
 
 .signupMatchContainer{
@@ -334,10 +334,20 @@
 .teamName{
 	height: 30pt;
 	color: #BC1B21;
-	font-size: 14pt;
+	font-size: 1.2rem;
 	letter-spacing: 7pt;
 	max-height: 100%;
-	padding-top: 0.55%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 6pt;
+
+}
+
+@media (max-width: 520px) {
+	.teamName {
+	  font-size: 0.7rem;
+	}
 }
 
 .red-back{
@@ -526,6 +536,7 @@
 	left: 26.923%;
 	max-width: 46.154%;
 	max-height: 5.924%;
+	z-index: 15;
 }
 
 .sponsorBackground{
@@ -540,6 +551,7 @@
 	border-bottom-right-radius: 6pt;
 	border-top: 0pt;
 	max-width: 46.154vw;
+	max-height: 100%;
 }
 
 .sponsorName{
