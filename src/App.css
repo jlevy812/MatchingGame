@@ -20,8 +20,9 @@
 	position: absolute;
 	max-width: 68.718%;
 	max-height: 3.555%;
-	top: 24.882%;
-	left: 15.641%;
+	top: 24.882% !important;
+	left: 15.641% !important;
+	margin-top: 0 !important;
 }
 
 .signupTeamNameBackground{
@@ -228,20 +229,30 @@
 	height: 844pt !important;
 	margin: auto;
 	padding-left: 0% !important;
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 .paddedColumn{
-	width: 120pt;
+	width: 30.769%;
 	padding-top: 5pt;
 	padding-bottom: 5pt;
 	padding-left: 4.5pt !important;
 	padding-right: 0 !important;
+	max-width: 30.769%;
 }
 
 .rowMargin{
-	margin: 0 5px;
-	width: 370pt;
-	padding-left: 14pt;
+	margin-left: 0.5% !important;
+	width: 100%;
+	max-height: 13.033vh;
+	margin-bottom: 1.303vh;
+}
+
+@media (max-width: 450px) {
+	.rowMargin{
+		margin-left: -5% !important;
+	}
 }
 
 .flip-card {
@@ -300,6 +311,8 @@
 	background-position: center;
 	color: white; 
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	max-width: 13.033vh;
+	max-height: 13.033vh;
 }
   
 .card-back-1{
@@ -351,11 +364,14 @@
 }
 
 .teamNameContainer{
-	position: absolute;
 	width: 268pt;
 	height: 30pt;
 	max-width: 68.718vw;
 	max-height: 3.555vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.555%;
+	top: 3.55%;
 }
 
 .teamNameBackground{
@@ -410,9 +426,10 @@
 	background-color: #4C0B0E;
 	background-image: url('assets/GamePage/Pattern_Mobile_SetTo100PercentWidth.svg');
 	text-align: center;
-	position: relative;
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
+	max-width: 100%;
+	max-height: 82.938vh;
 }
 
 .gradientBottom{
@@ -467,8 +484,8 @@
 }
 
 .matchContainer{
-	padding-top: 4pt;
-	padding-bottom: 14pt;
+	padding-top: 0.2vh;
+	padding-bottom: 1vh;
 	position: inherit;
 	z-index: 6;
 }
@@ -479,7 +496,10 @@
 	background-image: url('assets/SignUpPage/MATCH.svg');
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 100%;
 	margin: auto;
+	max-width: 60%;
+	max-height: 6.517%;
 }
 
 .board{
@@ -489,6 +509,8 @@
 	border-radius: 10pt !important; 
 	padding: 2pt;
 	margin: auto;
+	max-width: 94.872%;
+	max-height: 62.796vh;
 }
 
 .turnsText{
