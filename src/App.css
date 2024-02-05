@@ -552,7 +552,7 @@
 	border-style: solid;
 	letter-spacing: 5.6pt;
 	max-width: 99%;
-	max-height: 99%;
+	max-height: 93%;
 }
 
 .restartBackground{
@@ -568,7 +568,6 @@
 }
 
 .restartContainer{
-	padding-top: 10pt;
 	position: absolute;
 	height: 55pt;
 	width: 245pt;
