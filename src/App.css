@@ -126,6 +126,7 @@
 	left: 14.36%;
 	top: 79.5%;
 	align-items: center;
+	max-width: 85%;
 }
   
 .checkboxLabel {
@@ -164,7 +165,7 @@
 
 @media (max-height: 860px) {
 	.checkbox-container {
-		top: 82%;
+		top: 81%;
 	}
 }
   
@@ -207,6 +208,8 @@
 
 .signupStartContainer{
 	position: absolute;
+	height: 55pt;
+	width: 245pt;
 	top: 84.715%;
 	left: 19.231%;
 	max-width: 62.821%;
@@ -430,26 +433,28 @@
 	border-bottom: 1pt solid #BC1B21;
 	max-width: 100%;
 	max-height: 82.938vh;
+	position: relative;
 }
 
 .gradientBottom{
 	position: absolute;
-    bottom: 0;
-	left: 0;
-	right: 0;
 	height: 60pt;
+	width: 390pt;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 	z-index: 1;
+	max-width: 100%;
+	max-height: 4.739vh;
+	bottom: 0
 }
 
 .gradientTop{
 	position: absolute;
-    top: 0;
-	left: 0;
-	right: 0;
 	height: 60pt;
+	width: 390pt;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 	z-index: 5;
+	max-width: 100%;
+	max-height: 4.739vh;
 }
 
 
@@ -470,7 +475,7 @@
 	border-left: 0pt;
 	border-top: 0pt;
 	border-bottom-right-radius: 6pt;
-	max-width: 15.769vw;
+	max-width: 16vw;
 }
 
 .topRightRectangle{
@@ -480,23 +485,24 @@
 	border-right: 0pt;
 	border-top: 0pt;
 	border-bottom-left-radius: 6pt;
-	max-width: 15.769vw;
+	max-width: 16vw;
 }
 
 .matchContainer{
-	padding-top: 0.2vh;
-	padding-bottom: 1vh;
-	position: inherit;
+	position: absolute;
+	width: 390pt;
+	max-width: 100%;
 	z-index: 6;
+	max-height: 6.517%;
 }
 
 .matchLogo{
 	width: 260pt;
-	height: 55pt;
+	height: 45pt;
 	background-image: url('assets/SignUpPage/MATCH.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+	background-size: 90%;
 	margin: auto;
 	max-width: 60%;
 	max-height: 6.517%;
@@ -511,6 +517,9 @@
 	margin: auto;
 	max-width: 94.872%;
 	max-height: 62.796vh;
+	position: absolute;
+	top: 9.479vh;
+	left: 2.564%;
 }
 
 .turnsText{
@@ -542,8 +551,8 @@
 	border-color: white;
 	border-style: solid;
 	letter-spacing: 5.6pt;
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 98%;
+	max-height: 92.5%;
 }
 
 .restartBackground{
@@ -552,18 +561,25 @@
 	height: 55pt;
 	border-radius: 9pt !important; 
 	margin: auto;
-	padding-top: 0.296%;
+	position: absolute;
+	padding-top: 1%;
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 100%
 }
 
 .restartContainer{
 	padding-top: 10pt;
-	position: relative;
+	position: absolute;
+	height: 55pt;
+	width: 245pt;
 	z-index: 2;
 	display: flex;
     justify-content: center;
     align-items: center;
+	top: 89%;
+	left: 19.231%;
+	max-width: 62.821%;
+	max-height: 6.517%;
 }
 
 .bottomDesignRectangles{
