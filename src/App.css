@@ -698,6 +698,8 @@
 	background-repeat: no-repeat;
 	background-position: top;
 	position: relative;
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 .congratsText{
@@ -708,8 +710,8 @@
 	font-weight: bold;
 	color: #BC1B21;
 	position: absolute;
-	top: 40pt;
-	left: 104pt;
+	top: 4.739%;
+	left: 26.667%;
 }
 
 .youWonText{
@@ -720,8 +722,39 @@
 	font-weight: bold;
 	color: white;
 	position: absolute;
-	top: 60pt;
-	left: 45pt;
+	top: 7.5%;
+	left: 11.538%;
+}
+
+
+@media (max-width: 460px) {
+	.congratsText{
+		font-size: 32pt;
+	}
+	
+	.youWonText{
+		font-size: 54pt;
+	}
+}
+
+@media (max-width: 440px) {
+	.congratsText{
+		font-size: 28pt;
+	}
+	
+	.youWonText{
+		font-size: 50pt;
+	}
+}
+
+@media (max-width: 400px) {
+	.congratsText{
+		font-size: 26pt;
+	}
+	
+	.youWonText{
+		font-size: 46pt;
+	}
 }
 
 .winnerPhoto{
@@ -731,38 +764,58 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 157pt;
-	left: 20pt;
+	top: 18.602%;
+	left: 5.128%;
+	max-width: 89.744%;
 }
 
-.rightRedLine{
-	height: 1pt;
-	width: 153pt;
-	position: absolute;
-	top: 548.5pt;
-	background-color: #BC1B21;
+@media (max-height: 400px) {
+	.congratsText{
+		font-size: 26pt;
+	}
+	
+	.youWonText{
+		font-size: 46pt;
+	}
 }
 
 .leftRedLine{
 	height: 1pt;
 	width: 153pt;
 	position: absolute;
-	top: 548.5pt;
-	left: 237pt;
+	top: 64.988%;
 	background-color: #BC1B21;
+	max-width: 39.231%;
+}
+
+.rightRedLine{
+	height: 1pt;
+	width: 153pt;
+	position: absolute;
+	top: 64.988%;
+	left: 60.769%;
+	background-color: #BC1B21;
+	max-width: 39.231%;
 }
 
 .shareText{
 	height: 17pt;
 	width: 59pt;
 	position: absolute;
-	top: 540pt;
-	left: 166pt;
+	top: 63.581%;
+	left: 42.564%;
 	color: white;
 	font-size: 14pt;
 	font-family: 'Helvetica Neue';
 	font-weight: Bold;
 	letter-spacing: 2.8pt;
+}
+
+@media (max-width: 450px) {
+	.shareText{
+		top: 63.981%;
+		font-size: 10pt;
+	}
 }
 
 .facebookLogo{
