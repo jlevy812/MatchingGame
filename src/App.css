@@ -712,6 +712,7 @@
 	position: absolute;
 	top: 4.739%;
 	left: 26.667%;
+	max-width: 73.333%;
 }
 
 .youWonText{
@@ -724,6 +725,7 @@
 	position: absolute;
 	top: 7.5%;
 	left: 11.538%;
+	max-width: 88.462%;
 }
 
 
@@ -822,41 +824,47 @@
 	height: 30pt;
 	width: 30pt;
 	position: absolute;
-	top: 570pt;
-	left: 101pt;
+	top: 67.536%;
+	left: 25.897%;
 	background-image: url('assets/FinishPage/icon_facebook.svg');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	max-width: 7.692%;
+	max-height: 3.555%;
 }
 
 .xLogo{
 	height: 30pt;
 	width: 30pt;
 	position: absolute;
-	top: 570pt;
-	left: 181pt;
+	top: 67.536%;
+	left: 46.41%;
 	background-image: url('assets/FinishPage/icon_x.svg');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	max-width: 7.692%;
+	max-height: 3.555%;
 }
 
 .instagramLogo{
 	height: 30pt;
 	width: 30pt;
 	position: absolute;
-	top: 570pt;
-	left: 261pt;
+	top: 67.536%;
+	left: 66.923%;
 	background-image: url('assets/FinishPage/icon_instagram.svg');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	max-width: 7.692%;
+	max-height: 3.555%;
 }
 
 .checkEmailText{
 	width: 240pt;
 	height: 35pt;
 	position: absolute;
-	top: 620pt;
-	left: 75pt;
+	top: 73.46%;
+	left: 19.231%;
 	text-align: center;
 	white-space: pre-line;
 	font-size: 16pt;
@@ -864,6 +872,26 @@
 	font-weight: lighter;
 	line-height: 19pt;
 	color: white;
+	max-width: 61.538%;
+	max-height: 4.147%;
+}
+
+@media (max-width: 460px) {
+	.checkEmailText{
+		font-size: 14pt;
+	}
+}
+
+@media (max-width: 430px) {
+	.checkEmailText{
+		font-size: 13pt;
+	}
+}
+
+@media (max-width: 400px) {
+	.checkEmailText{
+		font-size: 12pt;
+	}
 }
 
 .finishRedBack{
@@ -876,13 +904,26 @@
 	position: absolute;
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
-	top: 690pt;
+	top: 81.754%;
     align-items: center;
     justify-content: center;
 	display: flex;
+	max-width: 100%;
+	max-height: 11.848%;
 }
 
 .finishPlayAgainContainer{
 	z-index: 11;
+	position: absolute;
+	height: 55pt;
+	width: 245pt;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	max-width: 62.821%;
+	max-height: 60%;
 }
 
+.finishGradientTop{
+	top: 0;
+}
