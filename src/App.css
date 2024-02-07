@@ -555,6 +555,25 @@
 	max-height: 93%;
 }
 
+@media (max-width: 420px) {
+	.restartButton {
+	  font-size: 14pt;
+	}
+}
+
+@media (max-width: 400px) {
+	.restartButton {
+	  font-size: 12pt;
+	}
+}
+
+@media (max-width: 380px) {
+	.restartButton {
+	  font-size: 10pt;
+	}
+}
+
+
 .restartBackground{
 	background: black;
 	width: 245pt;
