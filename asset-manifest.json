@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MatchingGame/static/css/main.7463c86f.css",
-    "main.js": "/MatchingGame/static/js/main.34d3b100.js",
+    "main.css": "/MatchingGame/static/css/main.5d85ccef.css",
+    "main.js": "/MatchingGame/static/js/main.72da5d48.js",
     "static/media/Background.png": "/MatchingGame/static/media/Background.f4c599fcbd6c65c22660.png",
     "static/media/immanuelquickly.jpeg": "/MatchingGame/static/media/immanuelquickly.e82b25a70f69cf0c241c.jpeg",
     "static/media/winnerPhoto.png": "/MatchingGame/static/media/winnerPhoto.2605a625677aca1fe95c.png",
@@ -19,11 +19,11 @@
     "index.html": "/MatchingGame/index.html",
     "static/media/icon_x.svg": "/MatchingGame/static/media/icon_x.b9cd5f0dcb29adfbb6f0.svg",
     "static/media/icon_facebook.svg": "/MatchingGame/static/media/icon_facebook.71d976bd57bc62c85279.svg",
-    "main.7463c86f.css.map": "/MatchingGame/static/css/main.7463c86f.css.map",
-    "main.34d3b100.js.map": "/MatchingGame/static/js/main.34d3b100.js.map"
+    "main.5d85ccef.css.map": "/MatchingGame/static/css/main.5d85ccef.css.map",
+    "main.72da5d48.js.map": "/MatchingGame/static/js/main.72da5d48.js.map"
   },
   "entrypoints": [
-    "static/css/main.7463c86f.css",
-    "static/js/main.34d3b100.js"
+    "static/css/main.5d85ccef.css",
+    "static/js/main.72da5d48.js"
   ]
 }
