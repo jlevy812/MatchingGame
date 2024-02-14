@@ -706,7 +706,6 @@
  
 .finishContainer {
     flex-direction: column;
-	justify-content: center;
 	background-color: black;
 	width: 390pt !important;
 	height: 844pt !important;
@@ -719,6 +718,9 @@
 	position: relative;
 	max-width: 100vw;
 	max-height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .congratsText{
@@ -728,10 +730,11 @@
 	font-family: 'Proxima Nova';
 	font-weight: bold;
 	color: #BC1B21;
-	position: absolute;
-	top: 4.739%;
-	left: 26.667%;
 	max-width: 73.333%;
+	max-height: 4.028%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .youWonText{
@@ -741,10 +744,11 @@
 	font-family: 'Proxima Nova';
 	font-weight: bold;
 	color: white;
-	position: absolute;
-	top: 7.5%;
-	left: 11.538%;
 	max-width: 88.462%;
+	max-height: 7.109%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -782,13 +786,13 @@
 	height: 350pt;
 	width: 350pt;
 	background-image: url('assets/FinishPage/winnerPhoto.png');
-	background-size: 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	position: absolute;
-	top: 18.602%;
-	left: 5.128%;
 	max-width: 89.744%;
 	max-height: 41.469%;
+	display: flex;
+	background-position: center;
+	margin-top: 5%
 }
 
 @media (max-height: 400px) {
@@ -801,11 +805,20 @@
 	}
 }
 
+.shareLine{
+	height: 20pt;
+	width: 390pt;
+	max-width: 100%;
+	max-height: 2.37%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3%;
+}
+
 .leftRedLine{
 	height: 1pt;
 	width: 153pt;
-	position: absolute;
-	top: 64.988%;
 	background-color: #BC1B21;
 	max-width: 39.231%;
 }
@@ -813,9 +826,6 @@
 .rightRedLine{
 	height: 1pt;
 	width: 153pt;
-	position: absolute;
-	top: 64.988%;
-	left: 60.769%;
 	background-color: #BC1B21;
 	max-width: 39.231%;
 }
@@ -823,68 +833,68 @@
 .shareText{
 	height: 17pt;
 	width: 59pt;
-	position: absolute;
-	top: 63.581%;
-	left: 42.564%;
 	color: white;
 	font-size: 14pt;
 	font-family: 'Helvetica Neue';
 	font-weight: Bold;
 	letter-spacing: 2.8pt;
+	max-height: 2.014vh;
+	max-width: 15.128%;
 }
 
 @media (max-width: 450px) {
 	.shareText{
-		top: 63.981%;
 		font-size: 10pt;
 	}
+}
+
+.logosLine{
+	width: 190pt;
+	height: 30pt;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 48.718%;
+	max-height: 3.555%;
+	margin-top: 3%;
 }
 
 .facebookLogo{
 	height: 30pt;
 	width: 30pt;
-	position: absolute;
-	top: 67.536%;
-	left: 25.897%;
 	background-image: url('assets/FinishPage/icon_facebook.svg');
-	background-size: 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	max-width: 7.692%;
-	max-height: 3.555%;
+	background-position: center;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .xLogo{
 	height: 30pt;
 	width: 30pt;
-	position: absolute;
-	top: 67.536%;
-	left: 46.41%;
 	background-image: url('assets/FinishPage/icon_x.svg');
-	background-size: 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	max-width: 7.692%;
-	max-height: 3.555%;
+	background-position: center;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .instagramLogo{
 	height: 30pt;
 	width: 30pt;
-	position: absolute;
-	top: 67.536%;
-	left: 66.923%;
 	background-image: url('assets/FinishPage/icon_instagram.svg');
-	background-size: 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	max-width: 7.692%;
-	max-height: 3.555%;
+	background-position: center;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .checkEmailText{
 	width: 240pt;
 	height: 35pt;
-	position: absolute;
-	top: 73.46%;
-	left: 19.231%;
 	text-align: center;
 	white-space: pre-line;
 	font-size: 16pt;
@@ -894,6 +904,9 @@
 	color: white;
 	max-width: 61.538%;
 	max-height: 4.147%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
 }
 
 @media (max-width: 460px) {
@@ -921,15 +934,15 @@
 	background-size: 85%;
 	background-color: rgba(76, 11, 14, 0.65); 
 	text-align: center;
-	position: absolute;
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
-	top: 81.754%;
     align-items: center;
     justify-content: center;
 	display: flex;
 	max-width: 100%;
 	max-height: 11.848%;
+	margin-top: 12%;
+	position: relative;
 }
 
 .finishPlayAgainContainer{
@@ -945,5 +958,11 @@
 }
 
 .finishGradientTop{
+	position: absolute !important;
 	top: 0;
+}
+
+.finishGradientBottom{
+	position: absolute !important;
+	bottom: 0
 }
