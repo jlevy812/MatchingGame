@@ -1,7 +1,6 @@
 /* Signup Page */
 .signupContainer {
     flex-direction: column;
-	justify-content: center;
 	background-color: black;
 	width: 390pt !important;
 	height: 844pt !important;
@@ -14,15 +13,15 @@
 	position: relative;
 	max-width: 100vw;
 	max-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .signupTeamNameContainer{
-	position: absolute;
-	max-width: 68.718%;
-	max-height: 3.555%;
-	top: 24.882% !important;
-	left: 15.641% !important;
-	margin-top: 0 !important;
+	max-width: 69%;
+	max-height: 4%;
+	margin-top: 40% !important;
 }
 
 .signupTeamNameBackground{
@@ -36,15 +35,14 @@
 	background-size: 85%;
 	background-color: rgba(76, 11, 14, 0.65); 
 	text-align: center;
-	position: absolute;
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
-	top: 28.436vh;
     align-items: center;
     justify-content: center;
 	max-width: 100%;
-	max-height: 16.588%;
+	max-height: 17%;
 	z-index: 16;
+	position: relative;
 }
 
 .signupMatchContainer{
@@ -70,33 +68,21 @@
 	z-index: 10;	
 }
 
-.signupTopDesignRectangles{
-	position: absolute !important;
-	top: 0;
-}
-
-.signupSponsorContainer{
-	position: absolute !important;
-	top: 45vh;
-}
-
 .signupSponsorBackground{
 	background-color: black;
 }
 
 .signupTextBoxes{
-	position: absolute;
-	top: 54.502%;
-	left: 7.692%;
-	height: 24.882%;
-	width: 84.615%;
+	height: 25%;
+	width: 85%;
 	display: flex;
   	flex-direction: column;
+	margin-top: 6%;
 }
 
 .inputBox {
-	margin-bottom: 2.37vh;
-	max-height: 31.753%;
+	margin-bottom: 2vh;
+	max-height: 32%;
 }
   
 .inputField {
@@ -110,7 +96,7 @@
 	font-size: 18pt;
 	font-family: 'Helvetica Neue';
 	max-width: 100%;
-	max-height: 5.924vh;
+	max-height: 6vh;
 }
 
 .inputField::placeholder {
@@ -121,51 +107,36 @@
 
 .checkbox-container {
 	height: 20pt; 
-	width: 330pt; 
-	position: absolute;
-	left: 14.36%;
-	top: 79.5%;
+	width: 390pt; 
 	align-items: center;
-	max-width: 85%;
+	justify-content: center;
+	max-width: 100%;
+	margin-top: 2%;
 }
   
 .checkboxLabel {
 	color: white;
-	font-size: 0.9169rem; 
+	font-size: 1rem; 
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
 @media (max-width: 520px) {
-	.checkbox-container {
-		left: 15.36%;
-	}
 	.checkboxLabel {
-	  font-size: 0.8669rem;
+	  font-size: 0.9rem;
 	}
 }
 
 @media (max-width: 450px) {
-	.checkbox-container {
-		left: 14.36%;
-	}
 	.checkboxLabel {
-	  font-size: 0.7669rem;
+	  font-size: 0.8rem;
 	}
 }
 
 @media (max-width: 400px) {
-	.checkbox-container {
-		left: 13.36%;
-	}
 	.checkboxLabel {
-	  font-size: 0.6669rem;
-	}
-}
-
-@media (max-height: 860px) {
-	.checkbox-container {
-		top: 82%;
+	  font-size: 0.7rem;
 	}
 }
   
@@ -207,19 +178,11 @@
 }
 
 .signupStartContainer{
-	position: absolute;
 	height: 55pt;
 	width: 245pt;
-	top: 84.715%;
-	left: 19.231%;
-	max-width: 62.821%;
-	max-height: 6.517%;
-}
-
-@media (max-height: 860px) {
-	.signupStartContainer{
-		top: 86.715%;
-	}
+	max-width: 63%;
+	max-height: 7%;
+	margin-top: 5%;
 }
 
 /* Gameplay Page */
@@ -234,22 +197,23 @@
 	padding-left: 0% !important;
 	max-width: 100vw;
 	max-height: 100vh;
+	align-items: center;
 }
 
 .paddedColumn{
-	width: 30.769%;
+	width: 31%;
 	padding-top: 5pt;
 	padding-bottom: 5pt;
 	padding-left: 4.5pt !important;
 	padding-right: 0 !important;
-	max-width: 30.769%;
+	max-width: 31%;
 }
 
 .rowMargin{
 	margin-left: 0.5% !important;
 	width: 100%;
-	max-height: 13.033vh;
-	margin-bottom: 1.303vh;
+	max-height: 13vh;
+	margin-bottom: 1.3vh;
 }
 
 @media (max-width: 450px) {
@@ -314,8 +278,8 @@
 	background-position: center;
 	color: white; 
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-	max-width: 13.033vh;
-	max-height: 13.033vh;
+	max-width: 13vh;
+	max-height: 13vh;
 }
   
 .card-back-1{
@@ -369,12 +333,9 @@
 .teamNameContainer{
 	width: 268pt;
 	height: 30pt;
-	max-width: 68.718vw;
-	max-height: 3.555vh;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3.555%;
-	top: 3.55%;
+	max-width: 69vw;
+	max-height: 3.5vh;
+	margin-top: 3.5%;
 }
 
 .teamNameBackground{
@@ -384,8 +345,8 @@
 	border-top-left-radius: 6pt;
 	border-top-right-radius: 6pt;
 	border-bottom: 0pt;
-	max-width: 68.718vw;
-	max-height: 3.555vh;
+	max-width: 69vw;
+	max-height: 3.5vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -432,7 +393,7 @@
 	border-top: 1pt solid #BC1B21;
 	border-bottom: 1pt solid #BC1B21;
 	max-width: 100%;
-	max-height: 82.938vh;
+	max-height: 83vh;
 	position: relative;
 }
 
@@ -443,7 +404,7 @@
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 	z-index: 1;
 	max-width: 100%;
-	max-height: 4.739vh;
+	max-height: 5vh;
 	bottom: 0
 }
 
@@ -454,7 +415,7 @@
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 	z-index: 5;
 	max-width: 100%;
-	max-height: 4.739vh;
+	max-height: 5vh;
 }
 
 
@@ -463,9 +424,10 @@
     width: 390pt;
 	display: flex;
     justify-content: space-between;
-	position: inherit;
+	position: absolute;
 	z-index: 7;
 	max-width: 100vw;
+	max-height: 7%;
 }
 
 .topLeftRectangle{
@@ -475,25 +437,27 @@
 	border-left: 0pt;
 	border-top: 0pt;
 	border-bottom-right-radius: 6pt;
-	max-width: 16vw;
+	max-width: 15.7vw;
+	max-height: 100%
 }
 
 .topRightRectangle{
 	height: 10pt;
-	width: 61.5pt;
+	width: 62pt;
 	border: 1pt solid #BC1B21;
 	border-right: 0pt;
 	border-top: 0pt;
 	border-bottom-left-radius: 6pt;
-	max-width: 16vw;
+	max-width: 15.7vw;
+	max-height: 100%
 }
 
 .matchContainer{
-	position: absolute;
 	width: 390pt;
 	max-width: 100%;
 	z-index: 6;
-	max-height: 6.517%;
+	max-height: 7%;
+	margin-top: 3%
 }
 
 .matchLogo{
@@ -515,11 +479,9 @@
 	border-radius: 10pt !important; 
 	padding: 2pt;
 	margin: auto;
-	max-width: 94.872%;
-	max-height: 62.796vh;
-	position: absolute;
-	top: 9.479vh;
-	left: 2.564%;
+	margin-top: 4%;
+	max-width: 95%;
+	max-height: 63vh;
 }
 
 .turnsText{
@@ -550,7 +512,7 @@
 	font-family: 'Proxima Nova';
 	border-color: white;
 	border-style: solid;
-	letter-spacing: 5.6pt;
+	letter-spacing: 6pt;
 	max-width: 99%;
 	max-height: 93%;
 }
@@ -573,31 +535,28 @@
 	}
 }
 
-
 .restartBackground{
 	background: black;
 	width: 245pt;
 	height: 55pt;
 	border-radius: 9pt !important; 
 	margin: auto;
-	position: absolute;
 	padding-top: 1%;
 	max-width: 100%;
 	max-height: 100%
 }
 
 .restartContainer{
-	position: absolute;
 	height: 55pt;
 	width: 245pt;
 	z-index: 2;
 	display: flex;
     justify-content: center;
     align-items: center;
-	top: 89%;
-	left: 19.231%;
-	max-width: 62.821%;
-	max-height: 6.517%;
+	max-width: 63%;
+	max-height: 7%;
+	margin: auto;
+	margin-top: 4%;
 }
 
 .bottomDesignRectangles{
@@ -609,6 +568,7 @@
 	bottom: 0;
 	z-index: 4;
 	max-width: 100vw;
+	max-height: 7%;
 }
 
 .bottomLeftRectangle{
@@ -618,7 +578,8 @@
 	border-left: 0pt;
 	border-bottom: 0pt;
 	border-top-right-radius: 6pt;
-	max-width: 27.179vw;
+	max-width: 27.2vw;
+	max-height: 100%
 }
 
 .bottomRightRectangle{
@@ -629,6 +590,7 @@
 	border-bottom: 0pt;
 	border-top-left-radius: 6pt;
 	max-width: 27.3vw;
+	max-height: 100%
 }
 
 .sponsorColumn{
@@ -643,14 +605,12 @@
 
 .sponsorContainer{
 	align-items: center;
-	margin-bottom: auto;
 	margin-left: auto;
 	margin-right: auto;
 	width: 180pt;
 	height: 50pt;
-	left: 26.923%;
-	max-width: 46.154%;
-	max-height: 5.924%;
+	max-width: 46%;
+	max-height: 6%;
 	z-index: 15;
 }
 
@@ -665,17 +625,17 @@
 	border-bottom-left-radius: 6pt;
 	border-bottom-right-radius: 6pt;
 	border-top: 0pt;
-	max-width: 46.154vw;
+	max-width: 46vw;
 	max-height: 100%;
 }
 
 .sponsorName{
 	color: white;
-	font-size: 0.836rem;
+	font-size: 0.8rem;
 	letter-spacing: 2pt;
 	text-align: left;
 	padding-left: 25pt;
-	padding-top: 2.132vh;
+	padding-top: 2vh;
 }
 
 .sponsorPicture{
@@ -686,9 +646,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-right: auto;
-	margin-top: 1.481vh;
+	margin-top: 1.5vh;
 	max-height: 60%;
-	max-width: 86.667%;
+	max-width: 87%;
 }
 
 @media (max-width: 520px) {
@@ -730,8 +690,8 @@
 	font-family: 'Proxima Nova';
 	font-weight: bold;
 	color: #BC1B21;
-	max-width: 73.333%;
-	max-height: 4.028%;
+	max-width: 73%;
+	max-height: 4%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -744,8 +704,8 @@
 	font-family: 'Proxima Nova';
 	font-weight: bold;
 	color: white;
-	max-width: 88.462%;
-	max-height: 7.109%;
+	max-width: 88%;
+	max-height: 7%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -788,8 +748,8 @@
 	background-image: url('assets/FinishPage/winnerPhoto.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	max-width: 89.744%;
-	max-height: 41.469%;
+	max-width: 90%;
+	max-height: 41%;
 	display: flex;
 	background-position: center;
 	margin-top: 5%
@@ -809,7 +769,7 @@
 	height: 20pt;
 	width: 390pt;
 	max-width: 100%;
-	max-height: 2.37%;
+	max-height: 3%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -820,14 +780,14 @@
 	height: 1pt;
 	width: 153pt;
 	background-color: #BC1B21;
-	max-width: 39.231%;
+	max-width: 39%;
 }
 
 .rightRedLine{
 	height: 1pt;
 	width: 153pt;
 	background-color: #BC1B21;
-	max-width: 39.231%;
+	max-width: 39%;
 }
 
 .shareText{
@@ -837,9 +797,9 @@
 	font-size: 14pt;
 	font-family: 'Helvetica Neue';
 	font-weight: Bold;
-	letter-spacing: 2.8pt;
-	max-height: 2.014vh;
-	max-width: 15.128%;
+	letter-spacing: 3pt;
+	max-height: 2vh;
+	max-width: 15%;
 }
 
 @media (max-width: 450px) {
@@ -854,8 +814,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 48.718%;
-	max-height: 3.555%;
+	max-width: 49%;
+	max-height: 4%;
 	margin-top: 3%;
 }
 
@@ -902,8 +862,8 @@
 	font-weight: lighter;
 	line-height: 19pt;
 	color: white;
-	max-width: 61.538%;
-	max-height: 4.147%;
+	max-width: 62%;
+	max-height: 4%;
 	display: flex;
 	justify-content: center;
 	margin-top: 5%;
@@ -940,7 +900,7 @@
     justify-content: center;
 	display: flex;
 	max-width: 100%;
-	max-height: 11.848%;
+	max-height: 12%;
 	margin-top: 12%;
 	position: relative;
 }
@@ -953,7 +913,7 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-	max-width: 62.821%;
+	max-width: 63%;
 	max-height: 60%;
 }
 

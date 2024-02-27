@@ -20,7 +20,7 @@ function SignupPage() {
       </div>
       <div className='signupRedBack'>
         <div className='gradientTop'></div>
-        <div className="topDesignRectangles signupTopDesignRectangles">
+        <div className="topDesignRectangles">
           <div className="topLeftRectangle"></div>
           <div className="topRightRectangle"></div>
         </div>
