@@ -13,7 +13,6 @@ var numTurns = 0;
 var numMatches = 0;
 var buttonClicked = false;
 var flipDelay = 0;
-var startOrRestart = "START";
 var newPage = true;
 
 const stylesArray = ['card-back-1', 'card-back-1', 'card-back-2', 'card-back-2', 'card-back-3', 'card-back-3', 'card-back-4', 'card-back-4', 'card-back-5', 'card-back-5', 'card-back-6', 'card-back-6'];
@@ -24,14 +23,18 @@ const isFrozen = Array(12).fill(true);
 function GameplayPage() {
     const navigate = useNavigate();
     const [internalIsFlipped, setInternalIsFlipped] = useState([]);
+    const [gameStart, setGameStart] = useState(true);
+    const [gameOver, setGameOver] = useState(false);
 
     const handleClick = () => {
 
+      setGameStart(false);
+      setGameOver(false);
+
       if (newPage){
-        startOrRestart = "RESTART";
         newPage = false;
       }
-  
+
       if (!buttonClicked){
         if (numMatches > 0){
           setInternalIsFlipped([]);
@@ -94,7 +97,6 @@ function GameplayPage() {
                   numTurns = 0;
                   numMatches = 0;
                   flipDelay = 0;
-                  startOrRestart = "START";
                   newPage = true;
                     navigate('/MatchingGame/finish');
                 }, 1000);
@@ -121,6 +123,11 @@ function GameplayPage() {
               setInternalIsFlipped(removingArray);
             }, 1000);
           }
+          if (numTurns === 8){
+            setTimeout(() => {
+              setGameOver(true);
+            }, 1000);
+          }
           card1Clicked = false;
         }
       }
@@ -128,80 +135,111 @@ function GameplayPage() {
     };
   
     return (
-      <div className="gameplayContainer">
-        <div className="teamNameContainer">
-          <div className="teamNameBackground">
-            <div className="teamName">TORONTO RAPTORS</div>
-          </div>
-        </div>
-        <div className="red-back">
-          <div className="gradientTop"></div>
-          <div></div>
-          <div className="topDesignRectangles">
-            <div className="topLeftRectangle"></div>
-            <div className="topRightRectangle"></div>
-          </div>
-          <div className="matchContainer">
-            <div className="matchLogo"></div>
-          </div>
-          <div className="board">
-            <div className="turnsText">
-              <span className="turns-label">TURNS: </span>
-              <span className="turns-value">{numTurns}/8</span>
-            </div>
-            <Row className="rowMargin">
-              {stylesArrayGrid[0].map((style, index) => (
-                <Col className="paddedColumn" key={`card${index}`} xs={4} md={4}>
-                  <Card style={stylesArrayGrid[0][index]} id={`card${index}`} onCardClick={handleCardClick} isFrozen={isFrozen[index]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
-                </Col>
-              ))}
-            </Row>
-            <Row className="rowMargin">
-              {stylesArrayGrid[1].map((style, index) => (
-                <Col className="paddedColumn" key={`card${index + 3}`} xs={4} md={4}>
-                  <Card style={stylesArrayGrid[1][index]} id={`card${index + 3}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 3]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
-                </Col>
-              ))}
-            </Row>
-            <Row className="rowMargin">
-              {stylesArrayGrid[2].map((style, index) => (
-                <Col className="paddedColumn" key={`card${index + 6}`} xs={4} md={4}>
-                  <Card style={stylesArrayGrid[2][index]} id={`card${index + 6}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 6]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
-                </Col>
-              ))}
-            </Row>
-            <Row className="rowMargin">
-              {stylesArrayGrid[3].map((style, index) => (
-                <Col className="paddedColumn" key={`card${index + 9}`} xs={4} md={4}>
-                  <Card style={stylesArrayGrid[3][index]} id={`card${index + 9}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 9]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
-                </Col>
-              ))}
-            </Row>
-          </div>
-          <div className="restartContainer">
-            <div className="restartBackground">
-              <button className="restartButton" onClick={handleClick}>{startOrRestart}</button>
+      <div>
+        <div className={`gameplayContainer ${gameOver || gameStart ? 'blurry' : ''}`}>
+          <div className="teamNameContainer">
+            <div className="teamNameBackground">
+              <div className="teamName">TORONTO RAPTORS</div>
             </div>
           </div>
-          <div className="bottomDesignRectangles">
-            <div className="bottomLeftRectangle"></div>
-            <div className="bottomRightRectangle"></div>
+          <div className="red-back">
+            <div className="gradientTop"></div>
+            <div></div>
+            <div className="topDesignRectangles">
+              <div className="topLeftRectangle"></div>
+              <div className="topRightRectangle"></div>
+            </div>
+            <div className="matchContainer">
+              <div className="matchLogo"></div>
+            </div>
+            <div className="board">
+              <div className="turnsText">
+                <span className="turns-label">TURNS: </span>
+                <span className="turns-value">{numTurns}/8</span>
+              </div>
+              <Row className="rowMargin">
+                {stylesArrayGrid[0].map((style, index) => (
+                  <Col className="paddedColumn" key={`card${index}`} xs={4} md={4}>
+                    <Card style={stylesArrayGrid[0][index]} id={`card${index}`} onCardClick={handleCardClick} isFrozen={isFrozen[index]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
+                  </Col>
+                ))}
+              </Row>
+              <Row className="rowMargin">
+                {stylesArrayGrid[1].map((style, index) => (
+                  <Col className="paddedColumn" key={`card${index + 3}`} xs={4} md={4}>
+                    <Card style={stylesArrayGrid[1][index]} id={`card${index + 3}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 3]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
+                  </Col>
+                ))}
+              </Row>
+              <Row className="rowMargin">
+                {stylesArrayGrid[2].map((style, index) => (
+                  <Col className="paddedColumn" key={`card${index + 6}`} xs={4} md={4}>
+                    <Card style={stylesArrayGrid[2][index]} id={`card${index + 6}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 6]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
+                  </Col>
+                ))}
+              </Row>
+              <Row className="rowMargin">
+                {stylesArrayGrid[3].map((style, index) => (
+                  <Col className="paddedColumn" key={`card${index + 9}`} xs={4} md={4}>
+                    <Card style={stylesArrayGrid[3][index]} id={`card${index + 9}`} onCardClick={handleCardClick} isFrozen={isFrozen[index + 9]} internalIsFlipped={internalIsFlipped} setInternalIsFlipped={setInternalIsFlipped}/>
+                  </Col>
+                ))}
+              </Row>
+            </div>
+            <div className="restartContainer">
+              <div className="restartBackground">
+                <button className="restartButton" onClick={handleClick}>RESTART</button>
+              </div>
+            </div>
+            <div className="bottomDesignRectangles">
+              <div className="bottomLeftRectangle"></div>
+              <div className="bottomRightRectangle"></div>
+            </div>
+            <div className="gradientBottom"></div>
           </div>
-          <div className="gradientBottom"></div>
-        </div>
-        <div className="sponsorContainer">
-          <div className="sponsorBackground">
-            <Row>
-              <Col className="sponsorColumn" xs={8} md={8}>
-                <div className="sponsorName">PRESENTED BY</div>
-              </Col>
-              <Col className="sponsorColumn" xs={4} md={4}>
-                <div className="sponsorPicture"></div>
-              </Col>
-            </Row>
+          <div className="sponsorContainer">
+            <div className="sponsorBackground">
+              <Row>
+                <Col className="sponsorColumn" xs={7} md={7}>
+                  <div className="sponsorName">PRESENTED BY</div>
+                </Col>
+                <Col className="sponsorColumn" xs={5} md={5}>
+                  <div className="sponsorPicture"></div>
+                </Col>
+              </Row>
+            </div>
           </div>
         </div>
+        {(gameStart) && (
+        <div className="gameOverContainer">
+          <div className="finishRedBack blurRedBack">
+          <div className='gradientTop finishGradientTop'></div>
+            <div className="finishPlayAgainContainer">
+              <div className="restartBackground blurRestartBackground">
+                <button className="restartButton" onClick={handleClick}>START</button>
+              </div>
+            </div>
+            <div className='gradientBottom finishGradientBottom'></div>
+          </div>
+        </div>
+        )}
+        {(gameOver) && (
+        <div className="gameOverContainer">
+          <div className='gameOverText'>GAME</div>
+          <div className='gameOverText'>OVER</div>
+          <div className="finishRedBack blurRedBack">
+          <div className='gradientTop finishGradientTop'></div>
+            <div className="finishPlayAgainContainer">
+              <div className="restartBackground blurRestartBackground">
+                <button className="restartButton" onClick={handleClick}>PLAY AGAIN</button>
+              </div>
+            </div>
+            <div className='gradientBottom finishGradientBottom'></div>
+          </div>
+        </div>
+        )}
       </div>
+        
     );
 }
 
